@@ -1,3 +1,59 @@
-
+@font-face {
+  font-family: menuFont;
+  src: url(fonts/OpenSans-Semibold.ttf); }
+@font-face {
+  font-family: headFont;
+  src: url(fonts/OpenSans-SemiboldItalic.ttf); }
+@font-face {
+  font-family: textFont;
+  src: url(fonts/OpenSans-LightItalic.ttf); }
+.headerContainer {
+  background-image: url("images/header.jpg");
+  background-size: 100% 100%;
+  margin: 0px;
+  width: 100%; }
+  .headerContainer .menu {
+    list-style: none;
+    margin: 0;
+    padding: 25px 0;
+    text-align: center; }
+    .headerContainer .menu li {
+      display: inline-block;
+      padding: 0 5px;
+      font-size: 16px;
+      font-weight: lighter;
+      font-family: menuFont; }
+      .headerContainer .menu li a:link, .headerContainer .menu li a:visited {
+        color: #F4F3FB;
+        text-decoration: none;
+        border-top: 2px solid #fcac45;
+        padding: 5px 5px;
+        margin: 10px 0px;
+        display: block; }
+      .headerContainer .menu li a:hover, .headerContainer .menu li a:active {
+        color: #F4F3FB;
+        background-color: #fcac45;
+        text-decoration: none;
+        padding: 10px 10px;
+        margin: 5px 5px;
+        transition: background-color 0.5s linear;
+        transition: padding 0.5s;
+        display: block; }
+  .headerContainer .textContainer {
+    margin: 250px auto 75px auto;
+    text-align: center; }
+    .headerContainer .textContainer h1 {
+      color: #F4F3FB;
+      font-family: headFont; }
+      .headerContainer .textContainer h1 span {
+        color: #fcac45; }
+    .headerContainer .textContainer p {
+      color: #F4F3FB;
+      font-size: 16px;
+      font-family: textFont;
+      letter-spacing: 1px; }
+      .headerContainer .textContainer p span {
+        color: #fcac45;
+        font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,85 @@
+$orange: #fcac45;
+$fontLight: #F4F3FB;
+
+@font-face {
+	font-family: menuFont;
+	src: url(fonts/OpenSans-Semibold.ttf);
+}
+
+@font-face {
+	font-family: headFont;
+	src: url(fonts/OpenSans-SemiboldItalic.ttf);
+}
+
+@font-face {
+	font-family: textFont;
+	src: url(fonts/OpenSans-LightItalic.ttf);
+}
+
+.headerContainer{
+	background-image: url("images/header.jpg");
+	background-size: 100% 100%;	
+
+	margin: 0px;
+	width: 100%;
+	
+	& .menu{
+		list-style: none;
+		margin: 0;
+		padding: 25px 0;
+		text-align: center;
+		& li{
+			display: inline-block;
+			padding: 0 5px;
+			font-size: 16px;
+			font-weight: lighter;
+			font-family: menuFont;
+			
+			& a:link, a:visited{
+				color: $fontLight;
+				text-decoration: none;
+				border-top: 2px solid $orange;
+				padding: 5px 5px;
+				margin: 10px 0px;
+				display: block;
+			}
+
+			& a:hover, a:active{
+				color: $fontLight;
+				background-color: $orange;
+				text-decoration: none;
+				padding: 10px 10px;
+				margin: 5px 5px;
+				transition: background-color 0.5s linear;
+				transition: padding 0.5s;
+				display: block;
+			}
+		}
+	}
+
+	& .textContainer{
+		margin: 250px auto 75px auto;
+		text-align: center;
+
+		& h1{
+			color: $fontLight;
+			font-family: headFont;
+
+			& span{
+				color: $orange;
+			}
+		}
+
+		& p{
+			color: $fontLight;
+			font-size: 16px;
+			font-family: textFont;
+			letter-spacing: 1px;
+
+			& span{
+				color: $orange;
+				font-weight: bold;
+			}
+		}
+	}
+}
