@@ -1,5 +1,20 @@
 $orange: #fcac45;
 $fontLight: #F4F3FB;
+$fontDark: #1A0338;
+$shadowColor: #888888;
+
+body{
+	background-color: #99a8b7;
+}
+
+.flex{
+  display: flex;
+}
+
+.flexCenter{
+  justify-content: center;
+  align-items: center;
+}
 
 @font-face {
 	font-family: menuFont;
@@ -13,15 +28,12 @@ $fontLight: #F4F3FB;
 
 @font-face {
 	font-family: textFont;
-	src: url(fonts/OpenSans-LightItalic.ttf);
+	src: url(fonts/OpenSans-Regular.ttf);
 }
 
 .headerContainer{
 	background-image: url("images/header.jpg");
 	background-size: 100% 100%;	
-
-	margin: 0px;
-	width: 100%;
 	
 	& .menu{
 		list-style: none;
@@ -79,6 +91,91 @@ $fontLight: #F4F3FB;
 			& span{
 				color: $orange;
 				font-weight: bold;
+			}
+		}
+	}
+}
+
+.firstSection{
+	background-color: white;
+
+	& .pictureContainer{
+		text-align: center;
+		margin: 100px auto;
+
+		& .picture{
+			box-shadow: 10px 10px 5px $shadowColor;
+		}
+	}
+
+	& .textContainer{
+		margin: 50px auto;
+
+		& h1{
+			font-family: headFont;
+			color: $fontDark;
+
+			& span{
+				color: $orange;
+			}
+		}
+
+		& p{
+			font-family: textFont;
+			color: $fontDark;
+			font-size: 16px;
+		}
+	}
+}
+
+.secondSection{
+	background-image: url(images/skills.jpg);
+	background-size: 100% 100%;
+
+	& h1{
+		font-family: headFont;
+		text-align: center;
+		color: $orange;
+	}
+
+	& p{
+		margin: 5px auto;
+		text-indent: -9999px;
+		border-bottom: 3px solid $orange;
+
+		&:nth-child(2) {
+			width:100px;
+		}
+
+		&:nth-child(3) {
+			width: 50px;
+		}
+		
+	}
+	.skillsContainer{
+
+		& .skill{
+
+			& img{
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			margin: 30px 30px;
+			}
+		}
+
+		& .progressBar{
+			width: 200px;
+			height: 20px;
+			border: 1px solid black;
+
+			& div{
+				height: 100%;
+				color: #fff;
+				text-align: right;
+				line-height: 20px;
+				width: 0;
+				background-color: $orange;
 			}
 		}
 	}

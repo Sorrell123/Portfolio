@@ -1,3 +1,13 @@
+body {
+  background-color: #99a8b7; }
+
+.flex {
+  display: flex; }
+
+.flexCenter {
+  justify-content: center;
+  align-items: center; }
+
 @font-face {
   font-family: menuFont;
   src: url(fonts/OpenSans-Semibold.ttf); }
@@ -6,12 +16,10 @@
   src: url(fonts/OpenSans-SemiboldItalic.ttf); }
 @font-face {
   font-family: textFont;
-  src: url(fonts/OpenSans-LightItalic.ttf); }
+  src: url(fonts/OpenSans-Regular.ttf); }
 .headerContainer {
   background-image: url("images/header.jpg");
-  background-size: 100% 100%;
-  margin: 0px;
-  width: 100%; }
+  background-size: 100% 100%; }
   .headerContainer .menu {
     list-style: none;
     margin: 0;
@@ -55,5 +63,56 @@
       .headerContainer .textContainer p span {
         color: #fcac45;
         font-weight: bold; }
+
+.firstSection {
+  background-color: white; }
+  .firstSection .pictureContainer {
+    text-align: center;
+    margin: 100px auto; }
+    .firstSection .pictureContainer .picture {
+      box-shadow: 10px 10px 5px #888888; }
+  .firstSection .textContainer {
+    margin: 50px auto; }
+    .firstSection .textContainer h1 {
+      font-family: headFont;
+      color: #1A0338; }
+      .firstSection .textContainer h1 span {
+        color: #fcac45; }
+    .firstSection .textContainer p {
+      font-family: textFont;
+      color: #1A0338;
+      font-size: 16px; }
+
+.secondSection {
+  background-image: url(images/skills.jpg);
+  background-size: 100% 100%; }
+  .secondSection h1 {
+    font-family: headFont;
+    text-align: center;
+    color: #fcac45; }
+  .secondSection p {
+    margin: 5px auto;
+    text-indent: -9999px;
+    border-bottom: 3px solid #fcac45; }
+    .secondSection p:nth-child(2) {
+      width: 100px; }
+    .secondSection p:nth-child(3) {
+      width: 50px; }
+  .secondSection .skillsContainer .skill img {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin: 30px 30px; }
+  .secondSection .skillsContainer .progressBar {
+    width: 200px;
+    height: 20px;
+    border: 1px solid black; }
+    .secondSection .skillsContainer .progressBar div {
+      height: 100%;
+      color: #fff;
+      text-align: right;
+      line-height: 20px;
+      width: 0;
+      background-color: #fcac45; }
 
 /*# sourceMappingURL=style.css.map */
