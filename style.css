@@ -108,38 +108,41 @@ body {
   .secondSection .skillsContainer .high {
     margin: 0 auto;
     width: 200px;
-    height: 20px;
-    border: 1px solid #1A0338; }
+    height: 20px; }
     .secondSection .skillsContainer .high div {
       height: 100%;
-      color: #1A0338;
+      color: white;
       text-align: right;
       line-height: 20px;
       width: 0;
-      background-color: #fcac45; }
+      background-color: #fcac45;
+      padding-right: 5px;
+      border-radius: 3px; }
   .secondSection .skillsContainer .mid {
     margin: 0 auto;
     width: 200px;
-    height: 20px;
-    border: 1px solid #1A0338; }
+    height: 20px; }
     .secondSection .skillsContainer .mid div {
       height: 100%;
-      color: #1A0338;
+      color: white;
       text-align: right;
       line-height: 20px;
       width: 0;
-      background-color: #fcac45; }
+      background-color: #fcac45;
+      padding-right: 5px;
+      border-radius: 3px; }
   .secondSection .skillsContainer .low {
     margin: 0 auto;
     width: 200px;
-    height: 20px;
-    border: 1px solid #1A0338; }
+    height: 20px; }
     .secondSection .skillsContainer .low div {
       height: 100%;
-      color: #1A0338;
+      color: white;
       text-align: right;
       line-height: 20px;
       width: 0;
-      background-color: #fcac45; }
+      background-color: #fcac45;
+      padding-right: 5px;
+      border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */

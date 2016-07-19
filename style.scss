@@ -170,15 +170,16 @@ body{
 			margin: 0 auto;
 			width: 200px;
 			height: 20px;
-			border: 1px solid $fontDark;
 
 			& div{
 				height: 100%;
-				color: $fontDark;
+				color: white;
 				text-align: right;
 				line-height: 20px;
 				width: 0;
 				background-color: $orange;
+				padding-right: 5px;
+				border-radius: 3px;
 			}
 		}
 
@@ -186,15 +187,17 @@ body{
 			margin: 0 auto;
 			width: 200px;
 			height: 20px;
-			border: 1px solid $fontDark;
 
 			& div{
 				height: 100%;
-				color: $fontDark;
+				color: white;
 				text-align: right;
 				line-height: 20px;
 				width: 0;
 				background-color: $orange;
+				padding-right: 5px;
+				border-radius: 3px;
+
 			}
 		}
 
@@ -202,15 +205,17 @@ body{
 			margin: 0 auto;
 			width: 200px;
 			height: 20px;
-			border: 1px solid $fontDark;
 
 			& div{
 				height: 100%;
-				color: $fontDark;
+				color: white;
 				text-align: right;
 				line-height: 20px;
 				width: 0;
 				background-color: $orange;
+				padding-right: 5px;
+				border-radius: 3px;
+
 			}
 		}
 	}
