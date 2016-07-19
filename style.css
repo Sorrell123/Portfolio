@@ -18,11 +18,11 @@ body {
   font-family: textFont;
   src: url(fonts/OpenSans-Regular.ttf); }
 .headerContainer {
-  background-image: url("images/header.jpg");
-  background-size: 100% 100%; }
+  background-image: url("images/header_1.jpg");
+  background-position-y: -80px;
+  background-repeat: no-repeat; }
   .headerContainer .menu {
     list-style: none;
-    margin: 0;
     padding: 25px 0;
     text-align: center; }
     .headerContainer .menu li {
@@ -48,7 +48,7 @@ body {
         transition: padding 0.5s;
         display: block; }
   .headerContainer .textContainer {
-    margin: 250px auto 75px auto;
+    margin: 350px auto 75px auto;
     text-align: center; }
     .headerContainer .textContainer h1 {
       color: #F4F3FB;
@@ -84,8 +84,8 @@ body {
       font-size: 16px; }
 
 .secondSection {
-  background-image: url(images/skills.jpg);
-  background-size: 100% 100%; }
+  background-image: url(images/skills_1.jpg);
+  background-repeat: no-repeat; }
   .secondSection h1 {
     font-family: headFont;
     text-align: center;
@@ -98,18 +98,45 @@ body {
       width: 100px; }
     .secondSection p:nth-child(3) {
       width: 50px; }
-  .secondSection .skillsContainer .skill img {
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    margin: 30px 30px; }
-  .secondSection .skillsContainer .progressBar {
+  .secondSection .skillsContainer .skill {
+    text-align: center; }
+    .secondSection .skillsContainer .skill img {
+      text-align: center;
+      width: 128px;
+      height: 128px;
+      margin: 15px 0; }
+  .secondSection .skillsContainer .high {
+    margin: 0 auto;
     width: 200px;
     height: 20px;
-    border: 1px solid black; }
-    .secondSection .skillsContainer .progressBar div {
+    border: 1px solid #1A0338; }
+    .secondSection .skillsContainer .high div {
       height: 100%;
-      color: #fff;
+      color: #1A0338;
+      text-align: right;
+      line-height: 20px;
+      width: 0;
+      background-color: #fcac45; }
+  .secondSection .skillsContainer .mid {
+    margin: 0 auto;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #1A0338; }
+    .secondSection .skillsContainer .mid div {
+      height: 100%;
+      color: #1A0338;
+      text-align: right;
+      line-height: 20px;
+      width: 0;
+      background-color: #fcac45; }
+  .secondSection .skillsContainer .low {
+    margin: 0 auto;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #1A0338; }
+    .secondSection .skillsContainer .low div {
+      height: 100%;
+      color: #1A0338;
       text-align: right;
       line-height: 20px;
       width: 0;

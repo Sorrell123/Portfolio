@@ -32,14 +32,15 @@ body{
 }
 
 .headerContainer{
-	background-image: url("images/header.jpg");
-	background-size: 100% 100%;	
+	background-image: url("images/header_1.jpg");
+  background-position-y: -80px;
+	background-repeat: no-repeat;
 	
 	& .menu{
 		list-style: none;
-		margin: 0;
 		padding: 25px 0;
 		text-align: center;
+
 		& li{
 			display: inline-block;
 			padding: 0 5px;
@@ -70,7 +71,7 @@ body{
 	}
 
 	& .textContainer{
-		margin: 250px auto 75px auto;
+		margin: 350px auto 75px auto;
 		text-align: center;
 
 		& h1{
@@ -129,8 +130,8 @@ body{
 }
 
 .secondSection{
-	background-image: url(images/skills.jpg);
-	background-size: 100% 100%;
+		background-image: url(images/skills_1.jpg);
+		background-repeat: no-repeat;
 
 	& h1{
 		font-family: headFont;
@@ -155,23 +156,57 @@ body{
 	.skillsContainer{
 
 		& .skill{
+			text-align: center;
 
 			& img{
 			text-align: center;
-			width: 100px;
-			height: 100px;
-			margin: 30px 30px;
+			width: 128px;
+			height: 128px;
+			margin: 15px 0;
 			}
 		}
 
-		& .progressBar{
+		& .high{
+			margin: 0 auto;
 			width: 200px;
 			height: 20px;
-			border: 1px solid black;
+			border: 1px solid $fontDark;
 
 			& div{
 				height: 100%;
-				color: #fff;
+				color: $fontDark;
+				text-align: right;
+				line-height: 20px;
+				width: 0;
+				background-color: $orange;
+			}
+		}
+
+		& .mid{
+			margin: 0 auto;
+			width: 200px;
+			height: 20px;
+			border: 1px solid $fontDark;
+
+			& div{
+				height: 100%;
+				color: $fontDark;
+				text-align: right;
+				line-height: 20px;
+				width: 0;
+				background-color: $orange;
+			}
+		}
+
+		& .low{
+			margin: 0 auto;
+			width: 200px;
+			height: 20px;
+			border: 1px solid $fontDark;
+
+			& div{
+				height: 100%;
+				color: $fontDark;
 				text-align: right;
 				line-height: 20px;
 				width: 0;
