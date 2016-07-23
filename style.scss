@@ -8,7 +8,7 @@ body{
 }
 
 .flex{
-  display: flex;
+  display: flex !important;
 }
 
 .flexCenter{
@@ -33,7 +33,8 @@ body{
 
 .headerContainer{
 	background-image: url("images/header_1.jpg");
-  background-position-y: -80px;
+  //background-position-y: -80px;
+  background-size: 100% 100%;
 	background-repeat: no-repeat;
 	
 	& .menu{
@@ -51,7 +52,7 @@ body{
 			& a:link, a:visited{
 				color: $fontLight;
 				text-decoration: none;
-				border-top: 2px solid $orange;
+				border-bottom: 2px solid $orange;
 				padding: 5px 5px;
 				margin: 10px 0px;
 				display: block;
@@ -131,7 +132,6 @@ body{
 
 .secondSection{
 		background-image: url(images/skills_1.jpg);
-		background-repeat: no-repeat;
 
 	& h1{
 		font-family: headFont;
@@ -151,24 +151,31 @@ body{
 		&:nth-child(3) {
 			width: 50px;
 		}
-		
 	}
 	.skillsContainer{
+		padding: 0 0;
+		
+		@media screen and (max-width: 992px){
+			width: 178px;
+			margin: 0 auto;
+		}
 
 		& .skill{
+			text-align: center;
+			padding: 0 0;
 			text-align: center;
 
 			& img{
 			text-align: center;
 			width: 128px;
 			height: 128px;
-			margin: 15px 0;
+			margin: 15px auto;
 			}
 		}
 
 		& .high{
 			margin: 0 auto;
-			width: 200px;
+			width: 150px;
 			height: 20px;
 
 			& div{
@@ -185,7 +192,7 @@ body{
 
 		& .mid{
 			margin: 0 auto;
-			width: 200px;
+			width: 150px;
 			height: 20px;
 
 			& div{
@@ -203,7 +210,7 @@ body{
 
 		& .low{
 			margin: 0 auto;
-			width: 200px;
+			width: 150px;
 			height: 20px;
 
 			& div{
@@ -216,6 +223,35 @@ body{
 				padding-right: 5px;
 				border-radius: 3px;
 
+			}
+		}
+	}
+
+	& .example-pager{
+		font-size: 40px;
+		color: white;
+		text-align: center;
+		cursor: pointer;
+
+		& .cycle-pager-active{
+			color: $orange;
+		}
+	}
+
+	& .center{
+		margin: 20px 0 20px 0;
+		text-align: center;
+
+		& button{
+			width: 75px;
+			padding: 0;	
+			background-color: white;
+			border: 2px solid $orange;
+
+			&:hover{
+				color: $fontLight;
+				background-color: $orange;
+				transition: background-color 0.5s linear;
 			}
 		}
 	}

@@ -10,6 +10,7 @@
   <script src="js/jquery-2.2.3.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/progressBar.js"></script>
+  <script src="js/jqueryCycle2.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -43,71 +44,104 @@
 		</div>
 	</section>
 	<section class="container secondSection">
+		
 		<h1>Umiejętności</h2>
 		<p>random text</p>
 		<p>random text</p>
-		<div class="col-md-12 skillsContainer">
-			<div class="col-md-3 skill">
-				<img src="images/html5_b.png" alt="html5">
-				<div class="high">
-					<div></div>
+		
+		<!-- prev/next links -->
+		
+
+		<!-- slideshow -->
+		<div class="col-md-12 skillsContainer cycle-slideshow"
+					data-cycle-fx=scrollHorz
+	        data-cycle-timeout="0"
+	        data-cycle-prev=".prevControl"
+	        data-cycle-next=".nextControl"
+	        data-cycle-pager=".example-pager"
+	        data-cycle-slides="> div"
+		      >
+
+			<div class="slide col-md-12">
+				<div class="col-md-4 skill">
+					<img src="images/html5_b.png" alt="html5">
+					<div class="high">
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-4 skill">
+					<img src="images/bootstrap_b.png" alt="bootstrap">
+					<div class="mid">
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-4 skill">
+					<img src="images/css3_b.png" alt="css3">
+					<div class="high">
+						<div></div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-3 skill">
-				<img src="images/bootstrap_b.png" alt="bootstrap">
-				<div class="mid">
-					<div></div>
+
+			<div class="slide col-md-12">
+				<div class="col-md-4 skill">
+					<img src="images/js_b.png" alt="JavaScript">
+					<div class="mid">
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-4 skill">
+					<img src="images/jQuery_b.png" alt="jQuery">
+					<div class="mid">
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-4 skill">
+					<img src="images/sass_b.png" alt="Sass">
+					<div class="high">
+						<div></div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-3 skill">
-				<img src="images/css3_b.png" alt="css3">
-				<div class="high">
-					<div></div>
+
+			<div class="slide col-md-12">
+				<div class="col-md-4 skill">
+					<img src="images/rwd_b.png" alt="rwd">
+					<div class="mid">
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-4 skill">
+					<img src="images/git_b.png" alt="GIT">
+					<div class="mid">
+						<div></div>
+					</div>
+				</div>
+				<div class="col-md-4 skill">
+					<img src="images/php_b.png" alt="PHP">
+					<div class="low">
+						<div></div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-3 skill">
-				<img src="images/js_b.png" alt="JavaScript">
-				<div class="mid">
-					<div></div>
-				</div>
-			</div>
-			<div class="col-md-3 skill">
-				<img src="images/jQuery_b.png" alt="jQuery">
-				<div class="mid">
-					<div></div>
-				</div>
-			</div>
-			<div class="col-md-3 skill">
-				<img src="images/sass_b.png" alt="Sass">
-				<div class="high">
-					<div></div>
-				</div>
-			</div>
-			<div class="col-md-3 skill">
-				<img src="images/rwd_b.png" alt="rwd">
-				<div class="mid">
-					<div></div>
-				</div>
-			</div>
-			<div class="col-md-3 skill">
-				<img src="images/git_b.png" alt="GIT">
-				<div class="mid">
-					<div></div>
-				</div>
-			</div>
-			<div class="col-md-3 skill">
-				<img src="images/php_b.png" alt="PHP">
-				<div class="low">
-					<div></div>
-				</div>
-			</div>
-			<div class="col-md-3 skill">
-				<img src="images/wp_b.png" alt="Wordpress">
-				<div class="low">
-					<div></div>
+
+			<div class="slide col-md-12">
+				<div class="col-md-4 skill">
+					<img src="images/wp_b.png" alt="Wordpress">
+					<div class="low">
+						<div></div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="example-pager"></div>
+		
+		<div class="col-md-12 center">
+	    <button class="prevControl"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+	    <button class="nextControl"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+		</div>
+		
 	</section>
 </body>
 </html>
