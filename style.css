@@ -70,7 +70,9 @@ body {
     text-align: center;
     margin: 100px auto; }
     .firstSection .pictureContainer .picture {
-      box-shadow: 10px 10px 5px #888888; }
+      box-shadow: 10px 10px 5px #888888;
+      width: 124px;
+      height: 156.62px; }
   .firstSection .textContainer {
     margin: 50px auto; }
     .firstSection .textContainer h1 {
@@ -151,16 +153,17 @@ body {
         background-color: #fcac45;
         padding-right: 5px;
         border-radius: 3px; }
-  .secondSection .example-pager {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    cursor: pointer; }
-    .secondSection .example-pager .cycle-pager-active {
-      color: #fcac45; }
   .secondSection .center {
     margin: 20px 0 20px 0;
     text-align: center; }
+    .secondSection .center .example-pager {
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      padding: 0 10px; }
+      .secondSection .center .example-pager .cycle-pager-active {
+        color: #fcac45; }
     .secondSection .center button {
       width: 75px;
       padding: 0;

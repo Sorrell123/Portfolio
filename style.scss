@@ -107,6 +107,8 @@ body{
 
 		& .picture{
 			box-shadow: 10px 10px 5px $shadowColor;
+			width: 124px;
+			height: 156.62px;
 		}
 	}
 
@@ -227,24 +229,25 @@ body{
 		}
 	}
 
-	& .example-pager{
-		font-size: 40px;
-		color: white;
-		text-align: center;
-		cursor: pointer;
-
-		& .cycle-pager-active{
-			color: $orange;
-		}
-	}
-
 	& .center{
 		margin: 20px 0 20px 0;
 		text-align: center;
 
+		& .example-pager{
+			font-size: 40px;
+			color: white;
+			text-align: center;
+			cursor: pointer;
+			padding: 0 10px;
+
+			& .cycle-pager-active{
+				color: $orange;
+			}
+		}
+
 		& button{
 			width: 75px;
-			padding: 0;	
+			padding: 0;;	
 			background-color: white;
 			border: 2px solid $orange;
 
