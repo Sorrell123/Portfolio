@@ -3,6 +3,23 @@ $fontLight: #F4F3FB;
 $fontDark: #1A0338;
 $shadowColor: #888888;
 
+//Classess for jQuery
+.none{
+	display: none;
+}
+
+.hidden{
+	display: hidden;
+}
+
+.opacity0{
+	opacity: 0;
+}
+
+.opacity1{
+	opacity: 1;	
+}
+
 body{
 	background-color: #99a8b7;
 }
@@ -258,5 +275,141 @@ body{
 				transition: background-color 0.5s linear;
 			}
 		}
+	}
+}
+
+.thirdSection{
+	background-color: white;
+	padding: 50px 15px;
+	color: $fontDark;
+	font-family: textFont;
+
+	& h1{
+		color: $fontDark;
+		font-family: headFont;
+		text-align: center;
+
+		& span{
+			color: $orange;
+		}
+	}
+
+	& .personalSection{
+		margin: 0;
+
+		& h3{
+			color: $orange;
+			font-family: headFont;		
+		}
+
+		& span{
+			font-weight: bold;
+		}
+
+		& ul{
+			list-style: none;
+		}
+	}
+
+	& .educationSection{
+		margin: 0;
+
+		& h3{
+			color: $orange;
+			font-family: headFont;	
+		}
+
+		& ul{
+			list-style: none;
+
+			& span{
+				display: block;
+				font-weight: bold;
+			}
+		}
+	}
+
+	& .experienceSection{
+		margin: 0;
+
+		& h3{
+			color: $orange;
+			font-family: headFont;
+		}
+
+		& ul{
+			list-style: none;
+
+			& li{
+				margin: 8px 0;
+	
+				& span{
+					font-weight: bold;
+					display: block;
+				}
+			}
+
+			& ul{
+				list-style: none;
+				padding: 0;
+
+				& li{
+					padding-left: 1.3em;
+
+					&:before{
+						content: "\f054"; /* FontAwesome Unicode */
+					  font-family: FontAwesome;
+					  display: inline-block;
+					  margin-left: -1.3em; /* same as padding-left set on li */
+					  margin-left: 10px;
+					  width: 1.3em; /* same as padding-left set on li */
+				 	}
+				}
+			}
+		}
+
+		& .toggleButton{
+			cursor: pointer;
+		}
+	}
+
+	& .skillsSection{
+		margin: 0;
+
+		& h3{
+			color: $orange;
+			font-family: headFont;
+		}
+
+		& ul{
+			list-style: none;
+
+			& li{
+				font-weight: bold;
+
+				&.toggleButton{
+					cursor: pointer;
+				}
+			}
+
+			& ul{
+				list-style: none;
+				padding: 0;
+
+				& li{
+					padding-left: 1.3em;
+					font-weight: normal;
+
+					&:before{
+						content: "\f054"; /* FontAwesome Unicode */
+					  font-family: FontAwesome;
+					  display: inline-block;
+					  margin-left: -1.3em; /* same as padding-left set on li */
+					  margin-left: 10px;
+					  width: 1.3em; /* same as padding-left set on li */
+				 	}
+				}
+			}
+		}		
 	}
 }

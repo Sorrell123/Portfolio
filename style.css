@@ -1,3 +1,15 @@
+.none {
+  display: none; }
+
+.hidden {
+  display: hidden; }
+
+.opacity0 {
+  opacity: 0; }
+
+.opacity1 {
+  opacity: 1; }
+
 body {
   background-color: #99a8b7; }
 
@@ -174,5 +186,92 @@ body {
         color: #F4F3FB;
         background-color: #fcac45;
         transition: background-color 0.5s linear; }
+
+.thirdSection {
+  background-color: white;
+  padding: 50px 15px;
+  color: #1A0338;
+  font-family: textFont; }
+  .thirdSection h1 {
+    color: #1A0338;
+    font-family: headFont;
+    text-align: center; }
+    .thirdSection h1 span {
+      color: #fcac45; }
+  .thirdSection .personalSection {
+    margin: 0; }
+    .thirdSection .personalSection h3 {
+      color: #fcac45;
+      font-family: headFont; }
+    .thirdSection .personalSection span {
+      font-weight: bold; }
+    .thirdSection .personalSection ul {
+      list-style: none; }
+  .thirdSection .educationSection {
+    margin: 0; }
+    .thirdSection .educationSection h3 {
+      color: #fcac45;
+      font-family: headFont; }
+    .thirdSection .educationSection ul {
+      list-style: none; }
+      .thirdSection .educationSection ul span {
+        display: block;
+        font-weight: bold; }
+  .thirdSection .experienceSection {
+    margin: 0; }
+    .thirdSection .experienceSection h3 {
+      color: #fcac45;
+      font-family: headFont; }
+    .thirdSection .experienceSection ul {
+      list-style: none; }
+      .thirdSection .experienceSection ul li {
+        margin: 8px 0; }
+        .thirdSection .experienceSection ul li span {
+          font-weight: bold;
+          display: block; }
+      .thirdSection .experienceSection ul ul {
+        list-style: none;
+        padding: 0; }
+        .thirdSection .experienceSection ul ul li {
+          padding-left: 1.3em; }
+          .thirdSection .experienceSection ul ul li:before {
+            content: "\f054";
+            /* FontAwesome Unicode */
+            font-family: FontAwesome;
+            display: inline-block;
+            margin-left: -1.3em;
+            /* same as padding-left set on li */
+            margin-left: 10px;
+            width: 1.3em;
+            /* same as padding-left set on li */ }
+    .thirdSection .experienceSection .toggleButton {
+      cursor: pointer; }
+  .thirdSection .skillsSection {
+    margin: 0; }
+    .thirdSection .skillsSection h3 {
+      color: #fcac45;
+      font-family: headFont; }
+    .thirdSection .skillsSection ul {
+      list-style: none; }
+      .thirdSection .skillsSection ul li {
+        font-weight: bold; }
+        .thirdSection .skillsSection ul li.toggleButton {
+          cursor: pointer; }
+      .thirdSection .skillsSection ul ul {
+        list-style: none;
+        padding: 0; }
+        .thirdSection .skillsSection ul ul li {
+          padding-left: 1.3em;
+          font-weight: normal; }
+          .thirdSection .skillsSection ul ul li:before {
+            content: "\f054";
+            /* FontAwesome Unicode */
+            font-family: FontAwesome;
+            display: inline-block;
+            margin-left: -1.3em;
+            /* same as padding-left set on li */
+            margin-left: 10px;
+            width: 1.3em;
+            /* same as padding-left set on li */ }
 
 /*# sourceMappingURL=style.css.map */
