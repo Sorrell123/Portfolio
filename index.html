@@ -16,223 +16,311 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-	<header class="container headerContainer">
-			<nav class="col-md-12">
-				<ul class="menu">
-					<li><a href="#">Strona Główna</a></li>
-					<li><a href="#">O mnie</a></li>
-					<li><a href="#">Umiejętności</a></li>
-					<li><a href="#">Curriculum Vitae</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Kontakt</a></li>
-				</ul>
-			</nav>
-		<div class="col-md-12 section">
-			<div class="textContainer">
-				<h1>Mateusz Kopeć <span>Front End Developer</span></h1>
-				<p>Młody, ambitny <span>front end developer</span>, który stawia na codzienny <span>rozwój i nowe technologie.</span></p>
-			</div>
-		</div>
-	</header>
-	<section class="container firstSection">
-		<div class="col-md-12 section">
-			<div class="col-md-4 pictureContainer">
-				<img class="picture" src="images/Zdjęcie1a.jpg" alt="Mateusz Kopeć">
-			</div>
-			<div class="col-md-8 textContainer section">
-				<h1>O <span>mnie</span></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia malesuada velit, ut scelerisque enim pretium at. Donec finibus, metus quis blandit pellentesque, neque justo vehicula nisi, gravida ultricies est felis et massa. Nulla rutrum magna eu arcu auctor fermentum. In hac habitasse platea dictumst. Aliquam erat volutpat. Nunc viverra varius sollicitudin. Aliquam dapibus posuere massa nec vulputate.</p>
-			</div>
-		</div>
-	</section>
-	<section class="container secondSection">
-		
-		<h1 class="section">Umiejętności</h2>
-		<p class="section">random text</p>
-		<p class="section">random text</p>
+  <header class="container headerContainer">
+      <nav class="col-md-12">
+        <ul class="menu">
+          <li><a href="#">Strona Główna</a></li>
+          <li><a href="#">O mnie</a></li>
+          <li><a href="#">Umiejętności</a></li>
+          <li><a href="#">Curriculum Vitae</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    <div class="col-md-12 section">
+      <div class="textContainer">
+        <h1>Mateusz Kopeć <span>Front End Developer</span></h1>
+        <p>Młody, ambitny <span>front end developer</span>, który stawia na codzienny <span>rozwój i nowe technologie.</span></p>
+      </div>
+    </div>
+  </header>
+  <section class="container firstSection">
+    <div class="col-md-12 section">
+      <div class="col-md-4 pictureContainer">
+        <img class="picture" src="images/Zdjęcie1a.jpg" alt="Mateusz Kopeć">
+      </div>
+      <div class="col-md-8 textContainer section">
+        <h1>O <span>mnie</span></h2>
+        <p>The young and ambitious student of the applied computer science is searching for his first job in the IT industry. After ended the course for the Front - end Developer he would like to improve  in this field and to get more experience. The perseverance causes that he won't go away from the computer before he doesn't finish the task, sometimes he is able to work for many hours.su</p>
+      </div>
+    </div>
+  </section>
+  <section class="container secondSection">
+    
+    <h1 class="section">Umiejętności</h2>
+    <p class="section"></p>
+    <p class="section"></p>
 
-		<!-- slideshow -->
-		<div class="col-md-12 skillsContainer section cycle-slideshow"
-					data-cycle-fx=scrollHorz
-	        data-cycle-timeout="0"
-	        data-cycle-prev=".prevControl"
-	        data-cycle-next=".nextControl"
-	        data-cycle-pager=".example-pager"
-	        data-cycle-slides="> div"
-		      >
+    <!--pager-->
+    <div class="pagerSkills"></div>
 
-			<div class="slide col-md-12 section">
-				<div class="col-md-4 skill">
-					<img src="images/html5_b.png" alt="html5">
-					<div class="high">
-						<div></div>
-					</div>
-				</div>
-				<div class="col-md-4 skill">
-					<img src="images/bootstrap_b.png" alt="bootstrap">
-					<div class="mid">
-						<div></div>
-					</div>
-				</div>
-				<div class="col-md-4 skill">
-					<img src="images/css3_b.png" alt="css3">
-					<div class="high">
-						<div></div>
-					</div>
-				</div>
-			</div>
+    <!-- slideshow -->
+    <div class="col-md-12 skillsContainer section cycle-slideshow"
+          data-cycle-fx=scrollHorz
+          data-cycle-timeout="0"
+          data-cycle-prev=".prevControl"
+          data-cycle-next=".nextControl"
+          data-cycle-pager=".pagerSkills"
+          data-cycle-slides="> div"
+          >
+      <div class="col-md-12 section">
+        <div class="col-md-4 skill">
+          <img src="images/html5_b.png" alt="html5">
+          <div class="high">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-4 skill">
+          <img src="images/bootstrap_b.png" alt="bootstrap">
+          <div class="mid">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-4 skill">
+          <img src="images/css3_b.png" alt="css3">
+          <div class="high">
+            <div></div>
+          </div>
+        </div>
+      </div>
 
-			<div class="slide col-md-12 section">
-				<div class="col-md-4 skill">
-					<img src="images/js_b.png" alt="JavaScript">
-					<div class="mid">
-						<div></div>
-					</div>
-				</div>
-				<div class="col-md-4 skill">
-					<img src="images/jQuery_b.png" alt="jQuery">
-					<div class="mid">
-						<div></div>
-					</div>
-				</div>
-				<div class="col-md-4 skill">
-					<img src="images/sass_b.png" alt="Sass">
-					<div class="high">
-						<div></div>
-					</div>
-				</div>
-			</div>
+      <div class="col-md-12 section">
+        <div class="col-md-4 skill">
+          <img src="images/js_b.png" alt="JavaScript">
+          <div class="mid">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-4 skill">
+          <img src="images/jQuery_b.png" alt="jQuery">
+          <div class="mid">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-4 skill">
+          <img src="images/sass_b.png" alt="Sass">
+          <div class="high">
+            <div></div>
+          </div>
+        </div>
+      </div>
 
-			<div class="slide col-md-12 section">
-				<div class="col-md-4 skill">
-					<img src="images/rwd_b.png" alt="rwd">
-					<div class="mid">
-						<div></div>
-					</div>
-				</div>
-				<div class="col-md-4 skill">
-					<img src="images/git_b.png" alt="GIT">
-					<div class="mid">
-						<div></div>
-					</div>
-				</div>
-				<div class="col-md-4 skill">
-					<img src="images/php_b.png" alt="PHP">
-					<div class="low">
-						<div></div>
-					</div>
-				</div>
-			</div>
+      <div class="col-md-12 section">
+        <div class="col-md-4 skill">
+          <img src="images/rwd_b.png" alt="rwd">
+          <div class="mid">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-4 skill">
+          <img src="images/git_b.png" alt="GIT">
+          <div class="mid">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-md-4 skill">
+          <img src="images/php_b.png" alt="PHP">
+          <div class="low">
+            <div></div>
+          </div>
+        </div>
+      </div>
 
-			<div class="slide col-md-12 section">
-				<div class="col-md-4 skill">
-					<img src="images/wp_b.png" alt="Wordpress">
-					<div class="low">
-						<div></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- prev/next links -->
-		<div class="col-md-12 flex flexCenter center section">
-	    <button class="prevControl"><i class="fa fa-arrow-left" aria-none="true"></i></button>
-	    <div class="example-pager"></div>
-	    <button class="nextControl"><i class="fa fa-arrow-right" aria-none="true"></i></button>
-		</div>
-		
-	</section>
-	<section class="container thirdSection">	
-		<h1 class="section">Curriculum <span>Vitae</span></h1>
-		<p class="section"></p>
-		<p class="section"></p>
-		<div class="col-md-12">
-			<div class="col-md-6 personalSection">
-				<h3>Personal details</h3>
-				<ul>
-					<li><span>Name:</span> Mateusz Kopeć;</li>
-					<li><span>Address:</span> Dobrego Pasterza 94 Cracow;</li>
-					<li><span>Telephone number:</span> +48 505 089 658;</li>
-					<li><span>E-mail:</span> mateusz.k.kopec@gmail.com;</li>
-					<li><span>GitHub:</span> https://github.com/Sorrell123;</li>
-					<li><span>Date of birth:</span> 20 July 1994;</li>
-					<li><span>Place of birth:</span> Iłża, Poland;</li>
-				</ul>
-			</div>
-			<div class="col-md-6 educationSection">
-				<h3>Education</h3>
-				<ul>
-					<li><span>2010 - 2013</span> II High School named after Maria Konopnicka in Radom;</li>
-					<li><span>2013 - 2014</span> Radom University of Technology – Humanistic – English Philology;</li>
-					<li><span>2014 - present</span> Cracow University of Economics – Applied Computer Science;</li>
-				</ul>
-			</div>
-		</div>
-		<div class="col-md-12">
-			<div class="col-md-6 experienceSection">
-				<h3>Courses and experience</h3>
-				<ul>
-					<li class="toggleButton"><span>Aprill 2016 - June 2016</span> Front-end development course by Akademia Kodu  
-						<i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
-						<i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
-					</li>
-					<ul class="none">
-						<li>4 whole-weekend classes</li>
-						<li>8 webinars</li>
-					</ul>
-					<li class="toggleButton"><span>April 2016 - July 2016</span> Self-improvement in front-end development and general webdesign 
-						<i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
-						<i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
-					</li>
-					<ul class="none">
-						<li>5 different graphic designs implemented into HTML, CSS and JavaScript code </li>
-						<li>Started learning PHP and implementing templates into WordPress </li>
-					</ul>
-				</ul>
-			</div>
-			<div class="col-md-6 skillsSection">
-				<h3>Skills</h3>
-				<ul>
-					<li class="toggleButton">Languages  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
-						<i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
-					</li>
-					<ul class="none">
-						<li>Fluent in English</li>
-					</ul>
-					<li class="toggleButton">Computer skills  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
-						<i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
-					</li>
-					<ul class="none">
-						<li>Sublime Tesxt 3</li>
-						<li>WebStorm</li>
-						<li>Lightworks</li>
-						<li>Photoshop - basiscs</li>
-					</ul>
-					<li class="toggleButton">Team work  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
-						<i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
-					</li>
-					<ul class="none">
-						<li>Group attendant during a camp for young people</li>
-						<li>Creating project of gaming on-line shop on college</li>
-					</ul>
-					<li class="toggleButton">Webdesign skills  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
-						<i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
-					</li>
-					<ul class="none">
-						<li>HTML 5</li>
-						<li>CSS 3</li>
-						<li>JavaScript and jQuery - necessary essentials</li>
-						<li>PHP - basics</li>
-						<li>Bootstrap 3 - necessary essentials</li>
-						<li>RWD (Grid)</li>
-						<li>Git - necessary essentials</li>
-						<li>SASS</li>
-						<li>BEM</li>
-						<li>Emmet</li>
-					</ul>
-				</ul>
-			</div>
-		</div>
-	</section>
+      <div class="col-md-12 section">
+        <div class="col-md-4 skill">
+          <img src="images/wp_b.png" alt="Wordpress">
+          <div class="low">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- prev/next links -->
+    <div class="col-md-12 flex flexCenter buttonSection section">
+      <button class="prevControl"><i class="fa fa-arrow-left" aria-none="true"></i></button>
+      <button class="nextControl"><i class="fa fa-arrow-right" aria-none="true"></i></button>
+    </div>
+    
+  </section>
+  <section class="container thirdSection">  
+    <h1 class="section">Curriculum <span>Vitae</span></h1>
+    <p class="section"></p>
+    <p class="section"></p>
+    <div class="col-md-12">
+      <div class="col-md-6 personalSection">
+        <h3>Personal details</h3>
+        <ul>
+          <li><span>Name:</span> Mateusz Kopeć;</li>
+          <li><span>Address:</span> Dobrego Pasterza 94 Cracow;</li>
+          <li><span>Telephone number:</span> +48 505 089 658;</li>
+          <li><span>E-mail:</span> mateusz.k.kopec@gmail.com;</li>
+          <li><span>GitHub:</span> https://github.com/Sorrell123;</li>
+          <li><span>Date of birth:</span> 20 July 1994;</li>
+          <li><span>Place of birth:</span> Iłża, Poland;</li>
+        </ul>
+      </div>
+      <div class="col-md-6 educationSection">
+        <h3>Education</h3>
+        <ul>
+          <li><span>2010 - 2013</span> II High School named after Maria Konopnicka in Radom;</li>
+          <li><span>2013 - 2014</span> Radom University of Technology – Humanistic – English Philology;</li>
+          <li><span>2014 - present</span> Cracow University of Economics – Applied Computer Science;</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-6 experienceSection">
+        <h3>Courses and experience</h3>
+        <ul>
+          <li class="toggleButton"><span>Aprill 2016 - June 2016</span> Front-end development course by Akademia Kodu  
+            <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
+            <i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
+          </li>
+          <ul class="none">
+            <li>4 whole-weekend classes</li>
+            <li>8 webinars</li>
+          </ul>
+          <li class="toggleButton"><span>April 2016 - July 2016</span> Self-improvement in front-end development and general webdesign 
+            <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
+            <i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
+          </li>
+          <ul class="none">
+            <li>5 different graphic designs implemented into HTML, CSS and JavaScript code </li>
+            <li>Started learning PHP and implementing templates into WordPress </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-md-6 skillsSection">
+        <h3>Skills</h3>
+        <ul>
+          <li class="toggleButton">Languages  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
+            <i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
+          </li>
+          <ul class="none">
+            <li>Fluent in English</li>
+          </ul>
+          <li class="toggleButton">Computer skills  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
+            <i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
+          </li>
+          <ul class="none">
+            <li>Sublime Tesxt 3</li>
+            <li>WebStorm</li>
+            <li>Lightworks</li>
+            <li>Photoshop - basiscs</li>
+          </ul>
+          <li class="toggleButton">Team work  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
+            <i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
+          </li>
+          <ul class="none">
+            <li>Group attendant during a camp for young people</li>
+            <li>Creating project of gaming on-line shop on college</li>
+          </ul>
+          <li class="toggleButton">Webdesign skills  <i class="iconDown fa fa-caret-square-o-down" aria-none="true"></i>
+            <i class="iconUp none fa fa-caret-square-o-up" aria-hidden="true"></i>
+          </li>
+          <ul class="none">
+            <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>JavaScript and jQuery - necessary essentials</li>
+          <li>PHP - basics</li>
+          <li>Bootstrap 3 - necessary essentials</li>
+          <li>RWD (Grid)</li>
+          <li>Git - necessary essentials</li>
+            <li>SASS</li>
+            <li>BEM</li>
+            <li>Emmet</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="container fourthSection">
+
+    <h1>Examples of my coded free templates</h1>
+    <p></p>
+    <p></p>
+
+    <!--pager-->
+    <div class="pagerWork"></div>
+
+    <!-- slideshow -->
+    <div class="portfolio col-md-12  cycle-slideshow"
+        data-cycle-fx=scrollHorz
+        data-cycle-timeout="0"
+        data-cycle-prev=".prevControl"
+        data-cycle-next=".nextControl"
+        data-cycle-pager=".pagerWork"
+        data-cycle-slides="> div"
+        >
+
+      <div class="col-md-12">
+        <div class="col-md-4 work">
+          <a href="#">
+            <img src="images/psd1a.png">
+            <p class="">
+              <a href="https://www.google.pl"><i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </p>
+          </a>
+        </div>
+        <div class="col-md-4 work">
+          <a href="#"><img src="images/psd2a.png"></a>
+          <p class="">
+            <a href="https://www.google.pl"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+      </div>
+      <div class="col-md-4 work">
+        <a href="#"><img src="images/psd3a.png"></a>
+        <p class="">
+          <a href="https://www.google.pl"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </p>
+      </div>
+      </div>
+     
+      <div class="col-md-12">
+        <div class="col-md-4 work">
+          <a href="#"><img src="images/psd4a.png"></a>
+          <p class="">
+            <a href="https://www.google.pl"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+        </div>
+        <div class="col-md-4 work">
+          <a href="#"><img src="images/psd5a.png"></a>
+          <p class="">
+            <a href="https://www.google.pl"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+        </div>
+        <div class="col-md-4 work">
+          <a href="#"><img src="images/psd6a.png"></a>
+          <p class="">
+            <a href="https://www.google.pl"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- prev/next links -->
+    <div class="col-md-12 flex flexCenter buttonSection">
+      <button class="prevControl"><i class="fa fa-arrow-left" aria-none="true"></i></button>
+      <button class="nextControl"><i class="fa fa-arrow-right" aria-none="true"></i></button>
+    </div>
+  </section>
+  <section class="container sixthSection">
+  <div class="headContainer col-md-12">
+    <h1>Feel free to contact me</h1>
+    <p></p>
+    <p></p>
+  </div>
+    <form class="col-md-12 formContainer">
+        <p>Name</p>
+        <input type="email" placeholder="Your Name" required>
+        <p>Your E-mail</p>
+        <input class="subject" type="tex" placeholder="Your Email" required>
+        <p>Your message</p>
+        <textarea class="textSpace" cols="60" rows="10" placeholder="Message"></textarea>
+        <input class="message" type="submit" value="SEND MESSAGE">
+    </form>
+  </section>
 </body>
 </html>

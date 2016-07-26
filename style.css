@@ -2,7 +2,10 @@
   display: none; }
 
 .hidden {
-  display: hidden; }
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
 
 .opacity0 {
   opacity: 0; }
@@ -99,19 +102,34 @@ body {
       font-size: 16px; }
 
 .secondSection {
-  background-image: url(images/skills_1.jpg); }
+  background-image: url(images/skills_1.jpg);
+  background-repeat: no-repeat;
+  padding: 50px 0; }
+  @media screen and (max-width: 992px) {
+    .secondSection {
+      padding: 0px; } }
   .secondSection h1 {
     font-family: headFont;
     text-align: center;
     color: #fcac45; }
-  .secondSection p {
+  .secondSection p:nth-child(2) {
     margin: 5px auto;
     text-indent: -9999px;
-    border-bottom: 3px solid #fcac45; }
-    .secondSection p:nth-child(2) {
-      width: 100px; }
-    .secondSection p:nth-child(3) {
-      width: 50px; }
+    border-bottom: 3px solid #fcac45;
+    width: 100px; }
+  .secondSection p:nth-child(3) {
+    margin: 5px auto;
+    text-indent: -9999px;
+    border-bottom: 3px solid #fcac45;
+    width: 50px; }
+  .secondSection .pagerSkills {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 10px; }
+    .secondSection .pagerSkills .cycle-pager-active {
+      color: #fcac45; }
   .secondSection .skillsContainer {
     padding: 0 0; }
     @media screen and (max-width: 992px) {
@@ -166,23 +184,16 @@ body {
         background-color: #fcac45;
         padding-right: 5px;
         border-radius: 3px; }
-  .secondSection .center {
+  .secondSection .buttonSection {
     margin: 20px 0 20px 0;
     text-align: center; }
-    .secondSection .center .example-pager {
-      font-size: 40px;
-      color: white;
-      text-align: center;
-      cursor: pointer;
-      padding: 0 10px; }
-      .secondSection .center .example-pager .cycle-pager-active {
-        color: #fcac45; }
-    .secondSection .center button {
+    .secondSection .buttonSection button {
       width: 75px;
       padding: 0;
+      color: #fcac45;
       background-color: white;
       border: 2px solid #fcac45; }
-      .secondSection .center button:hover {
+      .secondSection .buttonSection button:hover {
         color: #F4F3FB;
         background-color: #fcac45;
         transition: background-color 0.5s linear; }
@@ -273,5 +284,103 @@ body {
             margin-left: 10px;
             width: 1.3em;
             /* same as padding-left set on li */ }
+
+.fourthSection {
+  background-image: url("images/portfolioBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 50px 0; }
+  @media screen and (max-width: 992px) {
+    .fourthSection {
+      padding: 0px; } }
+  .fourthSection h1 {
+    font-family: headFont;
+    text-align: center;
+    color: #fcac45; }
+  .fourthSection p:nth-child(2) {
+    margin: 5px auto;
+    border-bottom: 3px solid #fcac45;
+    width: 100px; }
+  .fourthSection p:nth-child(3) {
+    margin: 5px auto;
+    border-bottom: 3px solid #fcac45;
+    width: 50px; }
+  .fourthSection .pagerWork {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 10px; }
+    .fourthSection .pagerWork .cycle-pager-active {
+      color: #fcac45; }
+  .fourthSection .work img {
+    width: 100%;
+    height: 256px;
+    position: relative; }
+  .fourthSection .work p {
+    font-size: 30px;
+    text-align: center;
+    background-color: white;
+    width: 100%; }
+    .fourthSection .work p a:link, .fourthSection .work p a:visited {
+      text-decoration: none;
+      color: black; }
+    .fourthSection .work p a:hover, .fourthSection .work p a:active {
+      text-decoration: none;
+      color: #fcac45;
+      transition: color 0.3s linear; }
+  .fourthSection .buttonSection {
+    margin: 10px 0 0 0;
+    text-align: center; }
+    .fourthSection .buttonSection button {
+      width: 75px;
+      padding: 0;
+      color: #fcac45;
+      background-color: white;
+      border: 2px solid #fcac45; }
+      .fourthSection .buttonSection button:hover {
+        color: #F4F3FB;
+        background-color: #fcac45;
+        transition: background-color 0.5s linear; }
+
+.sixthSection {
+  padding: 50px 0;
+  background-color: white; }
+  .sixthSection .headContainer p:nth-child(2) {
+    margin: 5px auto;
+    border-bottom: 3px solid #fcac45;
+    width: 100px; }
+  .sixthSection .headContainer p:nth-child(3) {
+    margin: 5px auto;
+    border-bottom: 3px solid #fcac45;
+    width: 50px; }
+  .sixthSection h1 {
+    font-family: headFont;
+    text-align: center;
+    color: #fcac45; }
+  .sixthSection form p {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    width: normal;
+    color: fontDark;
+    font-family: textFont;
+    font-weight: bold; }
+  .sixthSection form textarea {
+    margin: 10px auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #fcac45; }
+  .sixthSection form input {
+    display: block;
+    margin: 10px auto;
+    margin-top: 0;
+    border: 2px solid #fcac45; }
+    .sixthSection form input.message {
+      background-color: white;
+      font-family: headFont;
+      border-color: #fcac45;
+      color: #1A0338; }
 
 /*# sourceMappingURL=style.css.map */

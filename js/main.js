@@ -16,4 +16,17 @@ $(document).ready(function(){
 		$(this).next().toggle("slow");
 		$(this).children().toggleClass("none");
 	});
+
+	//Work links interaction
+	
+	$(".work").find("p").slideToggle();
+	
+	$(".work").hover(function(){
+		$(this).find("p").slideToggle("slow");
+		//$(this).find("p").css("height", "42px");
+	}, function(){
+		$(this).find("p").slideToggle("slow");
+		//$(this).find("p").css("height", "0px");
+	});
+	
 });
