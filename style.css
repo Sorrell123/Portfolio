@@ -209,6 +209,14 @@ body {
     text-align: center; }
     .thirdSection h1 span {
       color: #fcac45; }
+  .thirdSection p:nth-child(2) {
+    margin: 5px auto;
+    border-bottom: 3px solid #fcac45;
+    width: 100px; }
+  .thirdSection p:nth-child(3) {
+    margin: 5px auto;
+    border-bottom: 3px solid #fcac45;
+    width: 50px; }
   .thirdSection .personalSection {
     margin: 0; }
     .thirdSection .personalSection h3 {
@@ -346,6 +354,12 @@ body {
 .sixthSection {
   padding: 50px 0;
   background-color: white; }
+  .sixthSection .headContainer h1 {
+    font-family: headFont;
+    text-align: center;
+    color: #1A0338; }
+    .sixthSection .headContainer h1 span {
+      color: #fcac45; }
   .sixthSection .headContainer p:nth-child(2) {
     margin: 5px auto;
     border-bottom: 3px solid #fcac45;
@@ -354,10 +368,6 @@ body {
     margin: 5px auto;
     border-bottom: 3px solid #fcac45;
     width: 50px; }
-  .sixthSection h1 {
-    font-family: headFont;
-    text-align: center;
-    color: #fcac45; }
   .sixthSection form p {
     margin-top: 20px;
     margin-bottom: 0;
@@ -382,5 +392,9 @@ body {
       font-family: headFont;
       border-color: #fcac45;
       color: #1A0338; }
+      .sixthSection form input.message:hover {
+        color: #F4F3FB;
+        background-color: #fcac45;
+        transition: background-color 0.5s linear; }
 
 /*# sourceMappingURL=style.css.map */
