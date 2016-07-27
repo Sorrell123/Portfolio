@@ -23,6 +23,9 @@ body {
   justify-content: center;
   align-items: center; }
 
+.positionFixed {
+  position: fixed; }
+
 @font-face {
   font-family: menuFont;
   src: url(fonts/OpenSans-Semibold.ttf); }
@@ -32,28 +35,39 @@ body {
 @font-face {
   font-family: textFont;
   src: url(fonts/OpenSans-Regular.ttf); }
-.headerContainer {
-  background-image: url("images/header_1.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat; }
-  .headerContainer .menu {
+.menuButton {
+  font-size: 25px;
+  z-index: 2;
+  color: #1A0338; }
+  .menuButton:hover {
+    color: #F4F3FB;
+    background-color: #fcac45;
+    transition: background-color 0.5s linear; }
+
+.menu1 {
+  z-index: 1;
+  position: fixed;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  /* Negative half of width. */ }
+  .menu1 ul {
     list-style: none;
-    padding: 25px 0;
     text-align: center; }
-    .headerContainer .menu li {
+    .menu1 ul li {
       display: inline-block;
       padding: 0 5px;
       font-size: 16px;
       font-weight: lighter;
       font-family: menuFont; }
-      .headerContainer .menu li a:link, .headerContainer .menu li a:visited {
+      .menu1 ul li a:link, .menu1 ul li a:visited {
         color: #F4F3FB;
         text-decoration: none;
         border-bottom: 2px solid #fcac45;
         padding: 5px 5px;
         margin: 10px 0px;
         display: block; }
-      .headerContainer .menu li a:hover, .headerContainer .menu li a:active {
+      .menu1 ul li a:hover, .menu1 ul li a:active {
         color: #F4F3FB;
         background-color: #fcac45;
         text-decoration: none;
@@ -62,6 +76,39 @@ body {
         transition: background-color 0.5s linear;
         transition: padding 0.5s;
         display: block; }
+
+.headerContainer {
+  background-image: url("images/header_1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .headerContainer .menu {
+    z-index: 1; }
+    .headerContainer .menu ul {
+      list-style: none;
+      padding: 25px 0;
+      text-align: center; }
+      .headerContainer .menu ul li {
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: menuFont; }
+        .headerContainer .menu ul li a:link, .headerContainer .menu ul li a:visited {
+          color: #F4F3FB;
+          text-decoration: none;
+          border-bottom: 2px solid #fcac45;
+          padding: 5px 5px;
+          margin: 10px 0px;
+          display: block; }
+        .headerContainer .menu ul li a:hover, .headerContainer .menu ul li a:active {
+          color: #F4F3FB;
+          background-color: #fcac45;
+          text-decoration: none;
+          padding: 10px 10px;
+          margin: 5px 5px;
+          transition: background-color 0.5s linear;
+          transition: padding 0.5s;
+          display: block; }
   .headerContainer .textContainer {
     margin: 350px auto 75px auto;
     text-align: center; }
@@ -298,9 +345,6 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 50px 0; }
-  @media screen and (max-width: 992px) {
-    .fourthSection {
-      padding: 0px; } }
   .fourthSection h1 {
     font-family: headFont;
     text-align: center;
@@ -321,22 +365,27 @@ body {
     padding: 0 10px; }
     .fourthSection .pagerWork .cycle-pager-active {
       color: #fcac45; }
-  .fourthSection .work img {
-    width: 100%;
-    height: 256px;
-    position: relative; }
-  .fourthSection .work p {
-    font-size: 30px;
-    text-align: center;
-    background-color: white;
-    width: 100%; }
-    .fourthSection .work p a:link, .fourthSection .work p a:visited {
-      text-decoration: none;
-      color: black; }
-    .fourthSection .work p a:hover, .fourthSection .work p a:active {
-      text-decoration: none;
-      color: #fcac45;
-      transition: color 0.3s linear; }
+  @media screen and (max-width: 992px) {
+    .fourthSection .portfolio {
+      margin-left: 15%; } }
+  .fourthSection .portfolio .work {
+    padding: 20px 10px; }
+    .fourthSection .portfolio .work img {
+      width: 100%;
+      height: 256px;
+      position: relative; }
+    .fourthSection .portfolio .work p {
+      font-size: 30px;
+      text-align: center;
+      background-color: white;
+      width: 100%; }
+      .fourthSection .portfolio .work p a:link, .fourthSection .portfolio .work p a:visited {
+        text-decoration: none;
+        color: black; }
+      .fourthSection .portfolio .work p a:hover, .fourthSection .portfolio .work p a:active {
+        text-decoration: none;
+        color: #fcac45;
+        transition: color 0.3s linear; }
   .fourthSection .buttonSection {
     margin: 10px 0 0 0;
     text-align: center; }

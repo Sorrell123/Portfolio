@@ -66,5 +66,24 @@ $(document).ready(function(){
 	        scrollTop: $(".fifthSection").offset().top
 	    }, 1000);
 	});
+
+	//Pushing menu button
+	$(".menuButton").click(function(){
+		$(".menu1").addClass("positionFixed");
+		$(".menu1").css("background-color", "#99a8b7")
+		$(".menu1").toggle("none");
+	});
+
+	//Showing menu when scroll is lower
+	$(document).scroll(function() {
+        var nevHeight = $("nav").height();
+        var scrollAmount = $(window).scrollTop();
+        if(scrollAmount > nevHeight){
+        	$(".menuButton").removeClass("none");
+        }else if(scrollAmount <= nevHeight){
+        	$(".menuButton").addClass("none");
+        	$(".menu1").hide();
+        }
+	});
 	
 });
