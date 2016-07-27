@@ -351,24 +351,24 @@ body {
         background-color: #fcac45;
         transition: background-color 0.5s linear; }
 
-.sixthSection {
+.fifthSection {
   padding: 50px 0;
   background-color: white; }
-  .sixthSection .headContainer h1 {
+  .fifthSection .headContainer h1 {
     font-family: headFont;
     text-align: center;
     color: #1A0338; }
-    .sixthSection .headContainer h1 span {
+    .fifthSection .headContainer h1 span {
       color: #fcac45; }
-  .sixthSection .headContainer p:nth-child(2) {
+  .fifthSection .headContainer p:nth-child(2) {
     margin: 5px auto;
     border-bottom: 3px solid #fcac45;
     width: 100px; }
-  .sixthSection .headContainer p:nth-child(3) {
+  .fifthSection .headContainer p:nth-child(3) {
     margin: 5px auto;
     border-bottom: 3px solid #fcac45;
     width: 50px; }
-  .sixthSection form p {
+  .fifthSection form p {
     margin-top: 20px;
     margin-bottom: 0;
     text-align: center;
@@ -376,23 +376,23 @@ body {
     color: fontDark;
     font-family: textFont;
     font-weight: bold; }
-  .sixthSection form textarea {
+  .fifthSection form textarea {
     margin: 10px auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #fcac45; }
-  .sixthSection form input {
+  .fifthSection form input {
     display: block;
     margin: 10px auto;
     margin-top: 0;
     border: 2px solid #fcac45; }
-    .sixthSection form input.message {
+    .fifthSection form input.message {
       background-color: white;
       font-family: headFont;
       border-color: #fcac45;
       color: #1A0338; }
-      .sixthSection form input.message:hover {
+      .fifthSection form input.message:hover {
         color: #F4F3FB;
         background-color: #fcac45;
         transition: background-color 0.5s linear; }

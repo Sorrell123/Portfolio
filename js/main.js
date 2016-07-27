@@ -28,5 +28,43 @@ $(document).ready(function(){
 		$(this).find("p").slideToggle("slow");
 		//$(this).find("p").css("height", "0px");
 	});
+
+
+	//Give to menu its funcionality
+	$(".home").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("header").offset().top
+	    }, 1000);
+	});
+
+	$(".about").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".firstSection").offset().top
+	    }, 1000);
+	});
+
+	$(".skills").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".secondSection").offset().top
+	    }, 1000);
+	});
+
+	$(".cv").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".thirdSection").offset().top
+	    }, 1000);
+	});
+
+	$(".portfolio").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".fourthSection").offset().top
+	    }, 1000);
+	});
+
+	$(".contact").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $(".fifthSection").offset().top
+	    }, 1000);
+	});
 	
 });
