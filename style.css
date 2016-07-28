@@ -464,6 +464,9 @@ body {
   background-color: #fcac45;
   font-family: textFont;
   color: #1A0338; }
+  @media screen and (max-width: 992px) {
+    .footerContainer {
+      text-align: center; } }
   .footerContainer .headFooter {
     font-family: headFont; }
   .footerContainer .infoFooter {
