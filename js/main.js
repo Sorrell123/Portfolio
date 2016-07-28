@@ -32,9 +32,11 @@ $(document).ready(function(){
 
 	//Give to menu its funcionality
 	$(".home").click(function() {
-	    $('html, body').animate({
-	        scrollTop: $("header").offset().top
-	    }, 1000);
+
+	    $(".headerContainer").ScrollTo({
+	    	duration: 2000,
+    	    easing: 'linear'
+	    });
 	});
 
 	$(".about").click(function() {
@@ -62,28 +64,42 @@ $(document).ready(function(){
 	});
 
 	$(".contact").click(function() {
-	    $('html, body').animate({
+		$('html, body').animate({
 	        scrollTop: $(".fifthSection").offset().top
 	    }, 1000);
 	});
 
 	//Pushing menu button
 	$(".menuButton").click(function(){
-		$(".menu1").addClass("positionFixed");
-		$(".menu1").css("background-color", "#99a8b7")
-		$(".menu1").toggle("none");
+		$(".menuScroll").toggle("slow");
 	});
 
-	//Showing menu when scroll is lower
+	//Showing menu button when scroll is lower
+	
 	$(document).scroll(function() {
-        var nevHeight = $("nav").height();
+        var navHeight = $(".menu").height();
         var scrollAmount = $(window).scrollTop();
-        if(scrollAmount > nevHeight){
+
+        console.log(scrollAmount);
+
+        if(scrollAmount > navHeight){
         	$(".menuButton").removeClass("none");
-        }else if(scrollAmount <= nevHeight){
+        }else if(scrollAmount <= navHeight){
         	$(".menuButton").addClass("none");
-        	$(".menu1").hide();
+        	$(".menuScroll").css("display", "none");
         }
 	});
+	
+	/*
+	$(".menuScroll").click(function(){
+		console.log("kupa");
+		$(".menuScroll").css("display", "block");
+		event.stopPropagation();
+	});
+	*/
+
+	//some things here
+
+	
 	
 });

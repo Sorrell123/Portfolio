@@ -38,36 +38,39 @@ body {
 .menuButton {
   font-size: 25px;
   z-index: 2;
-  color: #1A0338; }
+  color: #1A0338;
+  margin: 20px 0 0 20px; }
   .menuButton:hover {
     color: #F4F3FB;
     background-color: #fcac45;
     transition: background-color 0.5s linear; }
 
-.menu1 {
+.menuScroll {
   z-index: 1;
   position: fixed;
   width: 600px;
   left: 50%;
   margin-left: -300px;
-  /* Negative half of width. */ }
-  .menu1 ul {
+  /* Negative half of width. */
+  background-color: #99a8b7; }
+  .menuScroll ul {
     list-style: none;
-    text-align: center; }
-    .menu1 ul li {
+    text-align: center;
+    padding: 0; }
+    .menuScroll ul li {
       display: inline-block;
       padding: 0 5px;
       font-size: 16px;
       font-weight: lighter;
       font-family: menuFont; }
-      .menu1 ul li a:link, .menu1 ul li a:visited {
+      .menuScroll ul li a:link, .menuScroll ul li a:visited {
         color: #F4F3FB;
         text-decoration: none;
         border-bottom: 2px solid #fcac45;
         padding: 5px 5px;
         margin: 10px 0px;
         display: block; }
-      .menu1 ul li a:hover, .menu1 ul li a:active {
+      .menuScroll ul li a:hover, .menuScroll ul li a:active {
         color: #F4F3FB;
         background-color: #fcac45;
         text-decoration: none;
@@ -79,8 +82,16 @@ body {
 
 .headerContainer {
   background-image: url("images/header_1.jpg");
-  background-size: 100% 100%;
+  background-position-y: -80px;
   background-repeat: no-repeat; }
+  @media (min-width: 992px) {
+    .headerContainer {
+      background-size: 100% 100%;
+      background-position-y: 0; } }
+  @media screen and (max-width: 992px) {
+    .headerContainer {
+      background-position-y: 0;
+      background-size: 100% 100%; } }
   .headerContainer .menu {
     z-index: 1; }
     .headerContainer .menu ul {
@@ -112,6 +123,9 @@ body {
   .headerContainer .textContainer {
     margin: 350px auto 75px auto;
     text-align: center; }
+    @media screen and (max-width: 992px) {
+      .headerContainer .textContainer {
+        margin: 75px 75px; } }
     .headerContainer .textContainer h1 {
       color: #F4F3FB;
       font-family: headFont; }
@@ -445,5 +459,26 @@ body {
         color: #F4F3FB;
         background-color: #fcac45;
         transition: background-color 0.5s linear; }
+
+.footerContainer {
+  background-color: #fcac45;
+  font-family: textFont;
+  color: #1A0338; }
+  .footerContainer .headFooter {
+    font-family: headFont; }
+  .footerContainer .infoFooter {
+    padding: 10px 0;
+    font-weight: bold; }
+    .footerContainer .infoFooter .socialFooter {
+      font-size: 16px; }
+      .footerContainer .infoFooter .socialFooter a:link, .footerContainer .infoFooter .socialFooter a:visited {
+        color: #1A0338; }
+      .footerContainer .infoFooter .socialFooter a:hover, .footerContainer .infoFooter .socialFooter a:active {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s linear; }
+    .footerContainer .infoFooter .contactFooter {
+      font-size: 16px;
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

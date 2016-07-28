@@ -13,18 +13,19 @@
   <script src="js/progressBar.js"></script>
   <script src="js/jqueryCycle2.js"></script>
   <script src="js/jquery.viewportchecker.min.js"></script>
+  <script src="js/jquery-scrollto.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
   <button class="menuButton none positionFixed"><i class="fa fa-bars" aria-hidden="true"></i></button>
-  <nav class="menu1 none">
+  <nav class="menuScroll none positionFixed">
     <ul>
-      <li><a class="home" href="#">Home</a></li>
-      <li><a class="about" href="#">About</a></li>
-      <li><a class="skills" href="#">Skills</a></li>
-      <li><a class="cv" href="#">Curriculum Vitae</a></li>
-      <li><a class="portfolio" href="#">Portfolio</a></li>
-      <li><a class="contact" href="#">Contact</a></li>
+      <li><a class="home menuLink" href="#">Home</a></li>
+      <li><a class="about menuLink" href="#">About</a></li>
+      <li><a class="skills menuLink" href="#">Skills</a></li>
+      <li><a class="cv menuLink" href="#">Curriculum Vitae</a></li>
+      <li><a class="portfolio menuLink" href="#">Portfolio</a></li>
+      <li><a class="contact menuLink" href="#">Contact</a></li>
     </ul>
   </nav>
   <header class="container headerContainer">
@@ -333,5 +334,20 @@
         <input class="message" type="submit" value="SEND MESSAGE">
     </form>
   </section>
+  <footer class="container footerContainer">
+    <div class="col-md-4 headFooter">
+      <h3>Mateusz Kopeć &copy; 2016</h3>
+    </div>
+    <div class="col-md-8 infoFooter">
+      <div class="col-md-6 socialFooter">
+        <a href="https://web.facebook.com/mateusz.kopec1"><p><i class="fa fa-facebook-official" aria-hidden="true"></i>  Facebook profile</p></a>
+        <a href="https://www.linkedin.com/in/mateusz-kopeć-7aab08125?tr"><p><i class="fa fa-linkedin-square" aria-hidden="true"></i>  LinkedIn profile</p></a>
+      </div>
+      <div class="col-md-6 contactFooter">
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> mateusz.k.kopec@gmail.com</p>
+        <p><i class="fa fa-phone-square" aria-hidden="true"></i> +48 505 089 658</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
