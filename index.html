@@ -17,47 +17,52 @@
   <script src="js/main.js"></script>
 </head>
 <body>
-  <button class="menuButton none positionFixed"><i class="fa fa-bars" aria-hidden="true"></i></button>
-  <nav class="menuScroll none positionFixed">
-    <ul>
-      <li><a class="home menuLink" href="#">Home</a></li>
-      <li><a class="about menuLink" href="#">About</a></li>
-      <li><a class="skills menuLink" href="#">Skills</a></li>
-      <li><a class="cv menuLink" href="#">Curriculum Vitae</a></li>
-      <li><a class="portfolio menuLink" href="#">Portfolio</a></li>
-      <li><a class="contact menuLink" href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <header class="container headerContainer">
+  <div class="scrollMenuContainer positionFixed">
+    <nav class="menuScroll none">
+      <ul>
+        <li><a class="home menuLink" href="#header">Home</a></li>
+        <li><a class="about menuLink" href="#first">About</a></li>
+        <li><a class="skills menuLink" href="#second">Skills</a></li>
+        <li><a class="cv menuLink" href="#third">Curriculum Vitae</a></li>
+        <li><a class="portfolio menuLink" href="#fourth">Portfolio</a></li>
+        <li><a class="contact menuLink" href="#fifth">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menuButton none">
+      <i class="menuArrowDown fa fa-arrow-down" aria-hidden="true"></i>
+      <i class="menuArrowUp none fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </div>
+  <header id="header" class="container headerContainer">
       <nav class="menu">
         <ul>
-          <li><a class="home" href="#">Home</a></li>
-          <li><a class="about" href="#">About</a></li>
-          <li><a class="skills" href="#">Skills</a></li>
-          <li><a class="cv" href="#">Curriculum Vitae</a></li>
-          <li><a class="portfolio" href="#">Portfolio</a></li>
-          <li><a class="contact" href="#">Contact</a></li>
+          <li><a class="home" href="#header">Home</a></li>
+          <li><a class="about" href="#first">About</a></li>
+          <li><a class="skills" href="#second">Skills</a></li>
+          <li><a class="cv" href="#third">Curriculum Vitae</a></li>
+          <li><a class="portfolio" href="#fourth">Portfolio</a></li>
+          <li><a class="contact" href="#fifth">Contact</a></li>
         </ul>
       </nav>
     <div class="col-md-12 section">
       <div class="textContainer">
-        <h1>Mateusz Kopeć <span>Front - End Developer</span></h1>
+        <h1>Mateusz Kopeć <span>Front-End Developer</span></h1>
         <p>Young, ambitious <span>front end developer</span>, who focuses on every day <span>improvement and new technologies.</span></p>
       </div>
     </div>
   </header>
-  <section class="container firstSection">
+  <section id="first" class="container firstSection">
     <div class="col-md-12 section">
       <div class="col-md-4 pictureContainer">
         <img class="picture" src="images/Zdjęcie1a.jpg" alt="Mateusz Kopeć">
       </div>
       <div class="col-md-8 textContainer section">
         <h1>About <span>me</span></h2>
-        <p>The young and ambitious student of the applied computer science is searching for his first job in the IT industry. After ended the course for the Front - end Developer he would like to improve  in this field and get more experience. The perseverance causes that he won't go away from the computer before he doesn't finish the task, sometimes he is able to work for many hours.su</p>
+        <p>The young and ambitious student of the applied computer science is searching for his first job in the IT industry. After ended the course for the Front-end Developer he would like to improve  in this field and get more experience. The perseverance causes that he won't go away from the computer before he doesn't finish the task, sometimes he is able to work for many hours.</p>
       </div>
     </div>
   </section>
-  <section class="container secondSection">
+  <section id="second" class="container secondSection">
     
     <h1 class="section">Skills</h2>
     <p class="section"></p>
@@ -67,7 +72,7 @@
     <div class="pagerSkills"></div>
 
     <!-- slideshow -->
-    <div class="col-md-12 skillsContainer section cycle-slideshow"
+    <div class="col-md-12 skillsContainer  cycle-slideshow"
           data-cycle-fx=scrollHorz
           data-cycle-timeout="0"
           data-cycle-prev=".prevControl"
@@ -150,12 +155,16 @@
     
     <!-- prev/next links -->
     <div class="col-md-12 flex flexCenter buttonSection">
-      <button class="prevControl"><i class="fa fa-arrow-left" aria-none="true"></i></button>
-      <button class="nextControl"><i class="fa fa-arrow-right" aria-none="true"></i></button>
+      <button class="skillControllButton prevControl">
+        <i class="fa fa-arrow-left" aria-none="true"></i>
+      </button>
+      <button class="skillControllButton nextControl">
+        <i class="fa fa-arrow-right" aria-none="true"></i>
+      </button>
     </div>
     
   </section>
-  <section class="container thirdSection">  
+  <section id="third" class="container thirdSection">  
     <h1 class="section">Curriculum <span>Vitae</span></h1>
     <p class="section"></p>
     <p class="section"></p>
@@ -247,7 +256,7 @@
       </div>
     </div>
   </section>
-  <section class="container fourthSection">
+  <section id="fourth" class="container fourthSection">
 
     <h1 class="section">Examples of my coded free templates</h1>
     <p class="section"></p>
@@ -318,7 +327,7 @@
       <button class="nextControl"><i class="fa fa-arrow-right" aria-none="true"></i></button>
     </div>
   </section>
-  <section class="container fifthSection">
+  <section id="fifth" class="container fifthSection">
   <div class="headContainer col-md-12">
     <h1 class="section">Feel free to <span>contact me</span></h1>
     <p class="section"></p>

@@ -35,56 +35,57 @@ body {
 @font-face {
   font-family: textFont;
   src: url(fonts/OpenSans-Regular.ttf); }
-.menuButton {
-  font-size: 25px;
-  z-index: 2;
-  color: #1A0338;
-  margin: 20px 0 0 20px; }
-  .menuButton:hover {
-    color: #F4F3FB;
-    background-color: #fcac45;
-    transition: background-color 0.5s linear; }
-
-.menuScroll {
-  z-index: 1;
-  position: fixed;
+.scrollMenuContainer {
+  z-index: 101;
+  text-align: center;
   width: 600px;
   left: 50%;
   margin-left: -300px;
-  /* Negative half of width. */
-  background-color: #99a8b7; }
-  .menuScroll ul {
-    list-style: none;
-    text-align: center;
-    padding: 0; }
-    .menuScroll ul li {
-      display: inline-block;
-      padding: 0 5px;
-      font-size: 16px;
-      font-weight: lighter;
-      font-family: menuFont; }
-      .menuScroll ul li a:link, .menuScroll ul li a:visited {
-        color: #F4F3FB;
-        text-decoration: none;
-        border-bottom: 2px solid #fcac45;
-        padding: 5px 5px;
-        margin: 10px 0px;
-        display: block; }
-      .menuScroll ul li a:hover, .menuScroll ul li a:active {
-        color: #F4F3FB;
-        background-color: #fcac45;
-        text-decoration: none;
-        padding: 10px 10px;
-        margin: 5px 5px;
-        transition: background-color 0.5s linear;
-        transition: padding 0.5s;
-        display: block; }
+  /* Negative half of width. */ }
+  .scrollMenuContainer .menuButton {
+    font-size: 25px;
+    color: #1A0338;
+    border-radius: 5px;
+    border: none; }
+    .scrollMenuContainer .menuButton:hover {
+      color: #F4F3FB;
+      background-color: #fcac45;
+      transition: background-color 0.5s linear; }
+  .scrollMenuContainer .menuScroll {
+    background-color: #99a8b7; }
+    .scrollMenuContainer .menuScroll ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      margin: 0 0; }
+      .scrollMenuContainer .menuScroll ul li {
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: menuFont; }
+        .scrollMenuContainer .menuScroll ul li a:link, .scrollMenuContainer .menuScroll ul li a:visited {
+          color: #F4F3FB;
+          text-decoration: none;
+          border-bottom: 2px solid #fcac45;
+          padding: 5px 5px;
+          margin: 10px 0px;
+          display: block; }
+        .scrollMenuContainer .menuScroll ul li a:hover, .scrollMenuContainer .menuScroll ul li a:active {
+          color: #F4F3FB;
+          background-color: #fcac45;
+          text-decoration: none;
+          padding: 10px 10px;
+          margin: 5px 5px;
+          transition: background-color 0.5s linear;
+          transition: padding 0.5s;
+          display: block; }
 
 .headerContainer {
   background-image: url("images/header_1.jpg");
   background-position-y: -80px;
   background-repeat: no-repeat; }
-  @media (min-width: 992px) {
+  @media (min-width: 992px) and (max-width: 1170px) {
     .headerContainer {
       background-size: 100% 100%;
       background-position-y: 0; } }

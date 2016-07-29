@@ -55,61 +55,69 @@ body{
 	src: url(fonts/OpenSans-Regular.ttf);
 }
 
-.menuButton{
-  font-size: 25px;
-  z-index: 2;
-  color: $fontDark;
-  margin: 20px 0 0 20px;
-
-  &:hover{
-    color: $fontLight;
-    background-color: $orange;
-    transition: background-color 0.5s linear;
-  }
-}
-
-.menuScroll{
-	z-index: 1;
-	position: fixed;
+.scrollMenuContainer{
+	z-index: 101;
+	text-align: center;
 	width: 600px;
 	left: 50%;
 	margin-left: -300px; /* Negative half of width. */
-	background-color: #99a8b7;
 
-	& ul{
-		list-style: none;
-		text-align: center;
-		padding: 0;
+	& .menuButton{
+	  font-size: 25px;
+	  //padding: 3px 10px 3px 10px;
+	  color: $fontDark;
+	  border-radius: 5px;
+	  border: none;
 
-		& li{
-			display: inline-block;
-			padding: 0 5px;
-			font-size: 16px;
-			font-weight: lighter;
-			font-family: menuFont;
-			
-			& a:link, a:visited{
-				color: $fontLight;
-				text-decoration: none;
-				border-bottom: 2px solid $orange;
-				padding: 5px 5px;
-				margin: 10px 0px;
-				display: block;
-			}
+	  &:hover{
+	    color: $fontLight;
+	    background-color: $orange;
+	    transition: background-color 0.5s linear;
+	  }
+	}
 
-			& a:hover, a:active{
-				color: $fontLight;
-				background-color: $orange;
-				text-decoration: none;
-				padding: 10px 10px;
-				margin: 5px 5px;
-				transition: background-color 0.5s linear;
-				transition: padding 0.5s;
-				display: block;
+	& .menuScroll{
+		background-color: #99a8b7;
+		& ul{
+			list-style: none;
+			text-align: center;
+			padding: 0;
+			margin: 0 0;
+
+			& li{
+				display: inline-block;
+				padding: 0 5px;
+				font-size: 16px;
+				font-weight: lighter;
+				font-family: menuFont;
+				
+				& a:link, a:visited{
+					color: $fontLight;
+					text-decoration: none;
+					border-bottom: 2px solid $orange;
+					padding: 5px 5px;
+					margin: 10px 0px;
+					display: block;
+				}
+
+				& a:hover, a:active{
+					color: $fontLight;
+					background-color: $orange;
+					text-decoration: none;
+					padding: 10px 10px;
+					margin: 5px 5px;
+					transition: background-color 0.5s linear;
+					transition: padding 0.5s;
+					display: block;
+				}
 			}
 		}
 	}
 }
+
+
+
+
 
 .headerContainer{
 	background-image: url("images/header_1.jpg");
@@ -117,7 +125,7 @@ body{
 	//background-size: 100% 100%;
 	background-repeat: no-repeat;
 
-	@media (min-width: 992px){
+	@media (min-width: 992px) and (max-width: 1170px){
 		background-size: 100% 100%;
 		background-position-y: 0;
 	}	
