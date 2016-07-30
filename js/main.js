@@ -33,10 +33,10 @@ $(document).ready(function(){
 	$(".work").find("p").slideToggle();
 	
 	$(".work").hover(function(){
-		$(this).find("p").slideToggle("slow");
+		$(this).find("p").slideToggle("normal");
 		//$(this).find("p").css("height", "42px");
 	}, function(){
-		$(this).find("p").slideToggle("slow");
+		$(this).find("p").slideToggle("normal");
 		//$(this).find("p").css("height", "0px");
 	});
 
@@ -87,7 +87,7 @@ $(document).ready(function(){
 
 	//Pushing menu button
 	$(".menuButton").click(function(){
-		$(".menuScroll").slideToggle("slow");
+		$(".menuScroll").slideToggle("normal");
 		$(".menuArrowDown").toggleClass("none");
 		$(".menuArrowUp").toggleClass("none");
 	});

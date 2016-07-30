@@ -333,13 +333,11 @@
     <p class="section"></p>
     <p class="section"></p>
   </div>
-    <form class="col-md-12 formContainer section">
-        <p>Name</p>
-        <input type="email" placeholder="Your Name" required>
+    <form class="col-md-12 formContainer section" action="send_mail.php" method="post">
         <p>Your E-mail</p>
-        <input class="subject" type="tex" placeholder="Your Email" required>
+        <input class="subject" type="text" placeholder="Your Email" required name="email_address">
         <p>Your message</p>
-        <textarea class="textSpace" cols="60" rows="10" placeholder="Message"></textarea>
+        <textarea class="textSpace" cols="60" rows="10" placeholder="Message" name="comments"></textarea>
         <input class="message" type="submit" value="SEND MESSAGE">
     </form>
   </section>
@@ -349,12 +347,7 @@
     </div>
     <div class="col-md-8 infoFooter">
       <div class="col-md-6 socialFooter">
-        <a href="https://web.facebook.com/mateusz.kopec1"><p><i class="fa fa-facebook-official" aria-hidden="true"></i>  Facebook profile</p></a>
         <a href="https://www.linkedin.com/in/mateusz-kopeć-7aab08125?tr"><p><i class="fa fa-linkedin-square" aria-hidden="true"></i>  LinkedIn profile</p></a>
-      </div>
-      <div class="col-md-6 contactFooter">
-        <p><i class="fa fa-envelope" aria-hidden="true"></i> mateusz.k.kopec@gmail.com</p>
-        <p><i class="fa fa-phone-square" aria-hidden="true"></i> +48 505 089 658</p>
       </div>
     </div>
   </footer>
