@@ -357,15 +357,15 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 50px 0; }
-  .fourthSection h1 {
+  .fourthSection .headContainer h1 {
     font-family: headFont;
     text-align: center;
     color: #fcac45; }
-  .fourthSection p:nth-child(2) {
+  .fourthSection .headContainer p:nth-child(2) {
     margin: 5px auto;
     border-bottom: 3px solid #fcac45;
     width: 100px; }
-  .fourthSection p:nth-child(3) {
+  .fourthSection .headContainer p:nth-child(3) {
     margin: 5px auto;
     border-bottom: 3px solid #fcac45;
     width: 50px; }
@@ -381,23 +381,55 @@ body {
     .fourthSection .portfolio {
       margin-left: 15%; } }
   .fourthSection .portfolio .work {
-    padding: 0px 10px; }
+    padding: 0px 10px;
+    position: relative; }
     .fourthSection .portfolio .work img {
       width: 100%;
-      height: 256px;
-      position: relative; }
+      height: 256px; }
     .fourthSection .portfolio .work p {
-      font-size: 30px;
-      text-align: center;
-      background-color: white;
-      width: 100%; }
-      .fourthSection .portfolio .work p a:link, .fourthSection .portfolio .work p a:visited {
-        text-decoration: none;
-        color: black; }
-      .fourthSection .portfolio .work p a:hover, .fourthSection .portfolio .work p a:active {
-        text-decoration: none;
-        color: #fcac45;
-        transition: color 0.3s linear; }
+      position: absolute;
+      width: 360px; }
+      .fourthSection .portfolio .work p:first-child {
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 20px 10px; }
+        .fourthSection .portfolio .work p:first-child span {
+          text-align: center;
+          font-size: 25px;
+          display: block; }
+        .fourthSection .portfolio .work p:first-child a:link, .fourthSection .portfolio .work p:first-child a:visited {
+          text-decoration: none;
+          display: block;
+          color: black;
+          color: inherit;
+          height: 200px; }
+        .fourthSection .portfolio .work p:first-child a:hover, .fourthSection .portfolio .work p:first-child a:active {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s linear;
+          display: block;
+          opacity: 1;
+          height: 200px; }
+      .fourthSection .portfolio .work p:nth-child(2) {
+        bottom: 0;
+        text-align: center;
+        font-size: 25px;
+        background-color: white;
+        color: black;
+        margin: 0;
+        border: 2px solid #fcac45; }
+        .fourthSection .portfolio .work p:nth-child(2) a:link, .fourthSection .portfolio .work p:nth-child(2) a:visited {
+          text-decoration: none;
+          display: block;
+          color: black;
+          color: inherit; }
+        .fourthSection .portfolio .work p:nth-child(2) a:hover, .fourthSection .portfolio .work p:nth-child(2) a:active {
+          text-decoration: none;
+          color: white;
+          transition: background-color 0.3s linear;
+          background-color: #fcac45;
+          display: block;
+          opacity: 1; }
   .fourthSection .buttonSection {
     margin: 10px 0 0 0;
     text-align: center; }

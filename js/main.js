@@ -29,15 +29,10 @@ $(document).ready(function(){
 	});
 
 	//Work links interaction
-	
-	$(".work").find("p").slideToggle();
-	
-	$(".work").hover(function(){
-		$(this).find("p").slideToggle("normal");
-		//$(this).find("p").css("height", "42px");
-	}, function(){
-		$(this).find("p").slideToggle("normal");
-		//$(this).find("p").css("height", "0px");
+	$(".work").hover(function() {
+		$(this).children().fadeIn();
+	}, function () {
+		$(".workDescription").fadeOut();
 	});
 
 
