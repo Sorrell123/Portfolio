@@ -10,7 +10,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".skillControllButton").click(function(){
+	$(".skillControllButtonNext").click(function(){
 		progress(80, $(".cycle-slide-active > div > div.high"));
 		progress(60, $(".cycle-slide-active > div > div.mid"));
 		progress(40, $(".cycle-slide-active > div > div.low"));
