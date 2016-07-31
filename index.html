@@ -335,7 +335,7 @@
   </div>
     <form class="col-md-12 formContainer section" action="send_mail.php" method="post">
         <p>Your E-mail</p>
-        <input class="subject" type="text" placeholder="Your Email" required name="email_address">
+        <input class="subject" type="email" placeholder="Your Email" required name="email_address">
         <p>Your message</p>
         <textarea class="textSpace" cols="60" rows="10" placeholder="Message" name="comments"></textarea>
         <input class="message" type="submit" value="SEND MESSAGE">
@@ -346,8 +346,16 @@
       <h3>Mateusz Kopeć &copy; 2016</h3>
     </div>
     <div class="col-md-8 infoFooter">
-      <div class="col-md-6 socialFooter">
-        <a href="https://www.linkedin.com/in/mateusz-kopeć-7aab08125?tr"><p><i class="fa fa-linkedin-square" aria-hidden="true"></i>  LinkedIn profile</p></a>
+      <div class="col-md-12 socialFooter">
+       <div class="col-md-4 itemContainer"> 
+          <a href="https://www.linkedin.com/in/mateusz-kopeć-7aab08125?tr"><p><i class="fa fa-linkedin-square" aria-hidden="true"></i>  LinkedIn profile</p></a>
+        </div>
+        <div class="col-md-4 itemContainer">
+          <a href="https://github.com/Sorrell123"><p><i class="fa fa-github" aria-hidden="true"></i>  GitHub account</p></a>
+        </div>
+        <div class="col-md-4 itemContainer">
+          <p><i class="fa fa-envelope" aria-hidden="true"></i>  mateusz.k.kopec@gmail.com</p> 
+        </div>
       </div>
     </div>
   </footer>

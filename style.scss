@@ -712,11 +712,15 @@ body{
 	}
 	
 	& .infoFooter{
-		padding: 10px 0;
+		padding: 23px 0;
 		font-weight: bold;
 
 		& .socialFooter{
 			font-size: 16px;
+
+			& .itemContainer{
+				padding: 0 0;
+			}
 
 			& a:link, a:visited{
 				color: $fontDark;
@@ -728,10 +732,46 @@ body{
 				transition: color 0.3s linear;
 			}
 		}
+	}
+}
 
-		& .contactFooter{
-			font-size: 16px;
-			font-weight: bold;
+.thxContainer{
+	text-align: center;
+
+	& h1{
+		font-family: headFont;
+		color: $fontDark;
+
+		& span{
+			color: $orange;
 		}
 	}
+
+	& p{
+		font-family: textFont;
+		color: $fontDark;
+		font-size: 20px;
+	}
+	
+	& a{
+		position: absolute;
+		left: 50%;
+	  transform: translateX(-50%);
+	  padding: 10px 10px;
+
+	  &:link, &:visited{
+	  	color: $fontLight;
+	  	text-decoration: none;
+	  	border-bottom: 2px solid $orange;
+	  	display: block;
+	  }
+
+	  &:hover, &:active{
+	  	color: $fontLight;
+	  	background-color: $orange;
+	  	text-decoration: none;
+	  	transition: background-color 0.5s linear;
+	  	display: block;
+	  }
+	}	
 }

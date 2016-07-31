@@ -468,18 +468,45 @@ body {
   .footerContainer .headFooter {
     font-family: headFont; }
   .footerContainer .infoFooter {
-    padding: 10px 0;
+    padding: 23px 0;
     font-weight: bold; }
     .footerContainer .infoFooter .socialFooter {
       font-size: 16px; }
+      .footerContainer .infoFooter .socialFooter .itemContainer {
+        padding: 0 0; }
       .footerContainer .infoFooter .socialFooter a:link, .footerContainer .infoFooter .socialFooter a:visited {
         color: #1A0338; }
       .footerContainer .infoFooter .socialFooter a:hover, .footerContainer .infoFooter .socialFooter a:active {
         color: white;
         text-decoration: none;
         transition: color 0.3s linear; }
-    .footerContainer .infoFooter .contactFooter {
-      font-size: 16px;
-      font-weight: bold; }
+
+.thxContainer {
+  text-align: center; }
+  .thxContainer h1 {
+    font-family: headFont;
+    color: #1A0338; }
+    .thxContainer h1 span {
+      color: #fcac45; }
+  .thxContainer p {
+    font-family: textFont;
+    color: #1A0338;
+    font-size: 20px; }
+  .thxContainer a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 10px; }
+    .thxContainer a:link, .thxContainer a:visited {
+      color: #F4F3FB;
+      text-decoration: none;
+      border-bottom: 2px solid #fcac45;
+      display: block; }
+    .thxContainer a:hover, .thxContainer a:active {
+      color: #F4F3FB;
+      background-color: #fcac45;
+      text-decoration: none;
+      transition: background-color 0.5s linear;
+      display: block; }
 
 /*# sourceMappingURL=style.css.map */
