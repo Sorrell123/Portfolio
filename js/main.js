@@ -37,6 +37,7 @@ $(document).ready(function(){
 
 
 	//Give to menu its funcionality
+	
 	$(".home").click(function(event) {
 		event.preventDefault();
 	    $("#header").ScrollTo({
@@ -46,39 +47,45 @@ $(document).ready(function(){
 	});
 
 	$(".about").click(function(event) {
-		event.preventDefault();
-	    $('html, body').animate({
-	        scrollTop: $("#first").offset().top
-	    }, 1000);
+	    event.preventDefault();
+	    $("#first").ScrollTo({
+	    	duration: 2000,
+    	    easing: 'linear'
+	    });
 	});
 
 	$(".skills").click(function(event) {
-		event.preventDefault();
-	    $('html, body').animate({
-	        scrollTop: $("#second").offset().top
-	    }, 1000);
+	    event.preventDefault();
+	    $("#second").ScrollTo({
+	    	duration: 2000,
+    	    easing: 'linear'
+	    });
 	});
 
 	$(".cv").click(function(event) {
-		event.preventDefault();
-	    $('html, body').animate({
-	        scrollTop: $("#third").offset().top
-	    }, 1000);
+	    event.preventDefault();
+	    $("#third").ScrollTo({
+	    	duration: 2000,
+    	    easing: 'linear'
+	    });
 	});
 
 	$(".portfolio").click(function(event) {
-		event.preventDefault();
-	    $('html, body').animate({
-	        scrollTop: $("#fourth").offset().top
-	    }, 1000);
+	    event.preventDefault();
+	    $("#fourth").ScrollTo({
+	    	duration: 2000,
+    	    easing: 'linear'
+	    });
 	});
 
 	$(".contact").click(function(event) {
-		event.preventDefault();
-	    $('html, body').animate({
-	        scrollTop: $("#fifth").offset().top
-	    }, 1000);
+	    event.preventDefault(); //zapobiega wykponaniu domyslnej akcjii
+	    $("#fifth").ScrollTo({
+	    	duration: 2000,
+    	    easing: 'linear'
+	    });
 	});
+
 
 	//Pushing menu button
 	$(".menuButton").click(function(){
@@ -102,11 +109,7 @@ $(document).ready(function(){
         }
 	});
 	
-	/*
-	$(".menuScroll").click(function(){
-		console.log("kupa");
-		$(".menuScroll").css("display", "block");
-		event.stopPropagation();
+	$(".fixPropagation").click(function(event){
+		event.stopPropagation(); // na bubbling effect
 	});
-	*/	
 });
