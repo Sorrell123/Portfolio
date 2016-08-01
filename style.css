@@ -82,14 +82,16 @@ body {
   background-image: url("images/header_1.jpg");
   background-position-y: -80px;
   background-repeat: no-repeat; }
-  @media (min-width: 992px) and (max-width: 1170px) {
+  @media (min-width: 992px) and (max-width: 1200px) {
     .headerContainer {
       background-size: 100% 100%;
       background-position-y: 0; } }
   @media screen and (max-width: 992px) {
     .headerContainer {
       background-position-y: 0;
-      background-size: 100% 100%; } }
+      background-size: 100% 100%;
+      margin: 0 0;
+      width: 100%; } }
   .headerContainer .menu {
     z-index: 1; }
     .headerContainer .menu ul {
@@ -141,6 +143,10 @@ body {
 .firstSection {
   background-color: white;
   padding: 50px 15px; }
+  @media screen and (max-width: 992px) {
+    .firstSection {
+      margin: 0 0;
+      width: 100%; } }
   .firstSection .pictureContainer {
     text-align: center;
     margin: 80px auto 100px auto; }
@@ -166,7 +172,9 @@ body {
   padding: 50px 0; }
   @media screen and (max-width: 992px) {
     .secondSection {
-      padding: 0px; } }
+      padding: 0px;
+      margin: 0 0;
+      width: 100%; } }
   .secondSection h1 {
     font-family: headFont;
     text-align: center;
@@ -262,6 +270,10 @@ body {
   padding: 50px 15px;
   color: #1A0338;
   font-family: textFont; }
+  @media screen and (max-width: 992px) {
+    .thirdSection {
+      margin: 0 0;
+      width: 100%; } }
   .thirdSection h1 {
     color: #1A0338;
     font-family: headFont;
@@ -357,6 +369,10 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 50px 0; }
+  @media screen and (max-width: 992px) {
+    .fourthSection {
+      margin: 0 0;
+      width: 100%; } }
   .fourthSection .headContainer h1 {
     font-family: headFont;
     text-align: center;
@@ -393,6 +409,13 @@ body {
         background: rgba(0, 0, 0, 0.6);
         color: white;
         padding: 20px 10px; }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          .fourthSection .portfolio .work p:first-child {
+            width: 293px;
+            margin: 0 auto; } }
+        @media screen and (max-width: 992px) {
+          .fourthSection .portfolio .work p:first-child {
+            width: inherit; } }
         .fourthSection .portfolio .work p:first-child span {
           text-align: center;
           font-size: 25px;
@@ -418,6 +441,13 @@ body {
         color: black;
         margin: 0;
         border: 2px solid #fcac45; }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          .fourthSection .portfolio .work p:nth-child(2) {
+            width: 293px; } }
+        @media screen and (max-width: 992px) {
+          .fourthSection .portfolio .work p:nth-child(2) {
+            width: 96%;
+            margin: 0 auto; } }
         .fourthSection .portfolio .work p:nth-child(2) a:link, .fourthSection .portfolio .work p:nth-child(2) a:visited {
           text-decoration: none;
           display: block;
@@ -447,6 +477,10 @@ body {
 .fifthSection {
   padding: 50px 0;
   background-color: white; }
+  @media screen and (max-width: 992px) {
+    .fifthSection {
+      margin: 0 0;
+      width: 100%; } }
   .fifthSection .headContainer h1 {
     font-family: headFont;
     text-align: center;
@@ -496,7 +530,9 @@ body {
   color: #1A0338; }
   @media screen and (max-width: 992px) {
     .footerContainer {
-      text-align: center; } }
+      text-align: center;
+      margin: 0 0;
+      width: 100%; } }
   .footerContainer .headFooter {
     font-family: headFont; }
   .footerContainer .infoFooter {
