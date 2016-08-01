@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 	//CV toggles
 	$(".toggleButton").click(function(){
-		$(this).next().toggle("slow");
+		$(this).next().children().toggle("slow");
 		$(this).children().toggleClass("none");
 	});
 
@@ -41,7 +41,7 @@ $(document).ready(function(){
 	$(".home").click(function(event) {
 		event.preventDefault();
 	    $("#header").ScrollTo({
-	    	duration: 2000,
+	    	duration: 500,
     	    easing: 'linear'
 	    });
 	});
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	$(".about").click(function(event) {
 	    event.preventDefault();
 	    $("#first").ScrollTo({
-	    	duration: 2000,
+	    	duration: 500,
     	    easing: 'linear'
 	    });
 	});
@@ -57,7 +57,7 @@ $(document).ready(function(){
 	$(".skills").click(function(event) {
 	    event.preventDefault();
 	    $("#second").ScrollTo({
-	    	duration: 2000,
+	    	duration: 500,
     	    easing: 'linear'
 	    });
 	});
@@ -65,7 +65,7 @@ $(document).ready(function(){
 	$(".cv").click(function(event) {
 	    event.preventDefault();
 	    $("#third").ScrollTo({
-	    	duration: 2000,
+	    	duration: 500,
     	    easing: 'linear'
 	    });
 	});
@@ -73,7 +73,7 @@ $(document).ready(function(){
 	$(".portfolio").click(function(event) {
 	    event.preventDefault();
 	    $("#fourth").ScrollTo({
-	    	duration: 2000,
+	    	duration: 500,
     	    easing: 'linear'
 	    });
 	});
@@ -81,7 +81,7 @@ $(document).ready(function(){
 	$(".contact").click(function(event) {
 	    event.preventDefault(); //zapobiega wykponaniu domyslnej akcjii
 	    $("#fifth").ScrollTo({
-	    	duration: 2000,
+	    	duration: 500,
     	    easing: 'linear'
 	    });
 	});

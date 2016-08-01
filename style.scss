@@ -600,7 +600,7 @@ body{
 
 
 		& .work{
-			padding: 0px 10px;
+			padding: 10px 10px;
 			position: relative;
 
 			& img{
@@ -623,7 +623,7 @@ body{
 					}
 
 					@media screen and(max-width: 992px){
-						width: inherit;
+						width: 507px;
 					}
 
 					& span{
@@ -666,8 +666,7 @@ body{
 					}
 
 					@media screen and(max-width: 992px){
-						width: 96%;
-						margin: 0 auto;
+						width: 507px;
 					}
 
 					& a:link, a:visited{

@@ -397,7 +397,7 @@ body {
     .fourthSection .portfolio {
       margin-left: 15%; } }
   .fourthSection .portfolio .work {
-    padding: 0px 10px;
+    padding: 10px 10px;
     position: relative; }
     .fourthSection .portfolio .work img {
       width: 100%;
@@ -415,7 +415,7 @@ body {
             margin: 0 auto; } }
         @media screen and (max-width: 992px) {
           .fourthSection .portfolio .work p:first-child {
-            width: inherit; } }
+            width: 507px; } }
         .fourthSection .portfolio .work p:first-child span {
           text-align: center;
           font-size: 25px;
@@ -446,8 +446,7 @@ body {
             width: 293px; } }
         @media screen and (max-width: 992px) {
           .fourthSection .portfolio .work p:nth-child(2) {
-            width: 96%;
-            margin: 0 auto; } }
+            width: 507px; } }
         .fourthSection .portfolio .work p:nth-child(2) a:link, .fourthSection .portfolio .work p:nth-child(2) a:visited {
           text-decoration: none;
           display: block;
