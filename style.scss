@@ -599,11 +599,10 @@ body{
 	}
 
 	.portfolio{
-		
 		@media screen and (max-width: 992px){
-			margin-left: 15%;
+			width: 507px;
+			margin: 0 auto;
 		}
-
 
 		& .work{
 			padding: 10px 10px;
@@ -672,7 +671,7 @@ body{
 					}
 
 					@media screen and(max-width: 992px){
-						width: 507px;
+						width: 457px;
 					}
 
 					& a:link, a:visited{
