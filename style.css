@@ -42,8 +42,13 @@ body {
   .scrollMenuContainer .menuButton {
     font-size: 25px;
     color: #1A0338;
-    border-radius: 5px;
-    border: none; }
+    background-color: #99a8b7;
+    width: 20%;
+    border: none;
+    outline: none; }
+    @media screen and (max-width: 992px) {
+      .scrollMenuContainer .menuButton {
+        font-size: 45px; } }
     .scrollMenuContainer .menuButton:hover {
       color: #F4F3FB;
       background-color: #fcac45;

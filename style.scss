@@ -66,8 +66,14 @@ body{
 	  font-size: 25px;
 	  //padding: 3px 10px 3px 10px;
 	  color: $fontDark;
-	  border-radius: 5px;
+	  background-color: #99a8b7;
+	  width: 20%;
 	  border: none;
+	  outline: none;
+
+	  @media screen and(max-width: 992px){
+	  	font-size: 45px;
+	  }
 
 	  &:hover{
 	    color: $fontLight;
@@ -78,6 +84,7 @@ body{
 
 	& .menuScroll{
 		background-color: #99a8b7;
+
 		& ul{
 			list-style: none;
 			text-align: center;
@@ -135,7 +142,6 @@ body{
 		background-size: 100% 100%;
 		margin: 0 0;
 		width: 100%;
-
 	}
 
 	
