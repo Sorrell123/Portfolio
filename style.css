@@ -134,16 +134,9 @@ body {
   .headerContainer .textContainer {
     margin: 350px auto 75px auto;
     text-align: center; }
-    @media screen and (max-width: 992px) {
-      .headerContainer .textContainer {
-        margin: 75px 75px; } }
     .headerContainer .textContainer h1 {
       color: #F4F3FB;
       font-family: headFont; }
-      @media screen and (max-width: 992px) {
-        .headerContainer .textContainer h1 {
-          color: #fcac45;
-          margin-top: 200px; } }
       .headerContainer .textContainer h1 span {
         color: #fcac45; }
     .headerContainer .textContainer p {
@@ -151,9 +144,6 @@ body {
       font-size: 16px;
       font-family: textFont;
       letter-spacing: 1px; }
-      @media screen and (max-width: 992px) {
-        .headerContainer .textContainer p {
-          color: #fcac45; } }
       .headerContainer .textContainer p span {
         color: #fcac45;
         font-weight: bold; }
@@ -284,7 +274,8 @@ body {
       padding: 0;
       color: #fcac45;
       background-color: white;
-      border: 2px solid #fcac45; }
+      border: 2px solid #fcac45;
+      outline: none; }
       .secondSection .buttonSection button:hover {
         color: #F4F3FB;
         background-color: #fcac45;
@@ -496,7 +487,8 @@ body {
       padding: 0;
       color: #fcac45;
       background-color: white;
-      border: 2px solid #fcac45; }
+      border: 2px solid #fcac45;
+      outline: none; }
       .fourthSection .buttonSection button:hover {
         color: #F4F3FB;
         background-color: #fcac45;
@@ -565,13 +557,17 @@ body {
     font-family: headFont; }
   .footerContainer .infoFooter {
     padding: 23px 0;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
     .footerContainer .infoFooter .socialFooter {
       font-size: 16px; }
+      @media screen and (max-width: 992px) {
+        .footerContainer .infoFooter .socialFooter {
+          font-size: 13px; }
+          .footerContainer .infoFooter .socialFooter i {
+            padding-right: 30px; } }
       .footerContainer .infoFooter .socialFooter .itemContainer {
         padding: 0 0; }
-      .footerContainer .infoFooter .socialFooter i {
-        padding-right: 10px; }
       .footerContainer .infoFooter .socialFooter a:link, .footerContainer .infoFooter .socialFooter a:visited {
         color: #1A0338; }
       .footerContainer .infoFooter .socialFooter a:hover, .footerContainer .infoFooter .socialFooter a:active {
