@@ -42,7 +42,7 @@ $(document).ready(function(){
 		event.preventDefault();
 	    $("#header").ScrollTo({
 	    	duration: 500,
-    	    easing: 'linear'
+    	    easing: 'swing'
 	    });
 	});
 
@@ -50,7 +50,7 @@ $(document).ready(function(){
 	    event.preventDefault();
 	    $("#first").ScrollTo({
 	    	duration: 500,
-    	    easing: 'linear'
+    	    easing: 'swing'
 	    });
 	});
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
 	    event.preventDefault();
 	    $("#second").ScrollTo({
 	    	duration: 500,
-    	    easing: 'linear'
+    	    easing: 'swing'
 	    });
 	});
 
@@ -66,7 +66,7 @@ $(document).ready(function(){
 	    event.preventDefault();
 	    $("#third").ScrollTo({
 	    	duration: 500,
-    	    easing: 'linear'
+    	    easing: 'swing'
 	    });
 	});
 
@@ -74,7 +74,7 @@ $(document).ready(function(){
 	    event.preventDefault();
 	    $("#fourth").ScrollTo({
 	    	duration: 500,
-    	    easing: 'linear'
+    	    easing: 'swing'
 	    });
 	});
 
@@ -82,7 +82,7 @@ $(document).ready(function(){
 	    event.preventDefault(); //zapobiega wykponaniu domyslnej akcjii
 	    $("#fifth").ScrollTo({
 	    	duration: 500,
-    	    easing: 'linear'
+    	    easing: 'swing'
 	    });
 	});
 
@@ -109,6 +109,7 @@ $(document).ready(function(){
         }
 	});
 	
+	//Fix skill links
 	$(".fixPropagation").click(function(event){
 		event.stopPropagation(); // na bubbling effect
 	});

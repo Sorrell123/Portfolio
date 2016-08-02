@@ -67,7 +67,7 @@ body{
 	  //padding: 3px 10px 3px 10px;
 	  color: $fontDark;
 	  background-color: #99a8b7;
-	  width: 20%;
+	  width: 10%;
 	  border: none;
 	  outline: none;
 
@@ -85,6 +85,8 @@ body{
 	& .menuScroll{
 		background-color: #99a8b7;
 
+		
+
 		& ul{
 			list-style: none;
 			text-align: center;
@@ -97,6 +99,10 @@ body{
 				font-size: 16px;
 				font-weight: lighter;
 				font-family: menuFont;
+
+				@media screen and(max-width: 992px){
+					font-size: 25px;
+				}
 				
 				& a:link, a:visited{
 					color: $fontLight;
@@ -148,6 +154,8 @@ body{
 	& .menu{
 		z-index: 1;
 
+		
+
 		& ul{
 			list-style: none;
 			padding: 25px 0;
@@ -159,6 +167,10 @@ body{
 				font-size: 16px;
 				font-weight: lighter;
 				font-family: menuFont;
+
+				@media screen and(max-width: 992px){
+					font-size: 25px;
+				}
 				
 				& a:link, a:visited{
 					color: $fontLight;
@@ -195,6 +207,11 @@ body{
 			color: $fontLight;
 			font-family: headFont;
 
+			@media screen and(max-width: 992px){
+				color: $orange;
+				margin-top: 200px;
+			}
+
 			& span{
 				color: $orange;
 			}
@@ -205,6 +222,9 @@ body{
 			font-size: 16px;
 			font-family: textFont;
 			letter-spacing: 1px;
+			@media screen and(max-width: 992px){
+				color: $orange;
+			}
 
 			& span{
 				color: $orange;
@@ -231,6 +251,11 @@ body{
 			box-shadow: 10px 10px 5px $shadowColor;
 			width: 124px;
 			height: 156.62px;
+
+			@media screen and(max-width: 992px){
+				width: 244px;
+				height: 313.32px;
+			}
 		}
 	}
 
@@ -378,6 +403,10 @@ body{
 	& .buttonSection{
 		margin: 20px 0 20px 0;
 		text-align: center;
+
+		@media screen and(max-width: 992px){
+			font-size: 30px;
+		}
 
 		& button{
 			width: 75px;
@@ -599,10 +628,12 @@ body{
 	}
 
 	.portfolio{
+		
 		@media screen and (max-width: 992px){
-			width: 507px;
+			width: 600px;
 			margin: 0 auto;
 		}
+
 
 		& .work{
 			padding: 10px 10px;
@@ -623,7 +654,7 @@ body{
 					padding: 20px 10px;
 
 					@media (min-width: 992px) and (max-width: 1200px){
-						width: 293px;
+						width: 294px;
 						margin: 0 auto;
 					}
 
@@ -667,11 +698,11 @@ body{
 					border: 2px solid $orange;
 
 					@media (min-width: 992px) and (max-width: 1200px){
-						width: 293px;
+						width: 294px;
 					}
 
 					@media screen and(max-width: 992px){
-						width: 457px;
+						width: 507px;
 					}
 
 					& a:link, a:visited{
@@ -697,6 +728,10 @@ body{
 	& .buttonSection{
 		margin: 10px 0 0 0;
 		text-align: center;
+
+		@media screen and(max-width: 992px){
+			font-size: 30px;
+		}
 
 		& button{
 			width: 75px;
@@ -818,6 +853,10 @@ body{
 
 			& .itemContainer{
 				padding: 0 0;
+			}
+
+			& i{
+				padding-right: 10px;
 			}
 
 			& a:link, a:visited{
